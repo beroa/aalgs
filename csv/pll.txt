@@ -1,0 +1,695 @@
+[  
+   {  
+      "id":"78cb3025-1aaf-4623-95dd-9fe4417cf0c1",
+      "name":"Aa",
+      "shortName":"aa",
+      "caseGroupName":"PLL",
+      "caseGroupNameWithParents":"PLL",
+      "caseGroupShortName":"pll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"l' U R' D2 R U' R' D2 R2"
+         },
+         {  
+            "moves":"x R' U R' D2 R U' R' D2 R2"
+         },
+         {  
+            "moves":"R' F R' B2 R F' R' B2 R2"
+         },
+         {  
+            "moves":"y x' R2 D2 R' U' R D2 R' U R' x"
+         },
+         {  
+            "moves":"x' R' D R' U2 R D' R' U2 R2"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"R' F R' B2 R F' R' B2 R2",
+      "pigStage":"pll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"651741cc-9298-4773-89e6-bc77d62a158f",
+      "name":"Ab",
+      "shortName":"ab",
+      "caseGroupName":"PLL",
+      "caseGroupNameWithParents":"PLL",
+      "caseGroupShortName":"pll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"l' R' D2 R U R' D2 R U' R x'"
+         },
+         {  
+            "moves":"x R2 D2 R U R' D2 R U' R x'"
+         },
+         {  
+            "moves":"y x' R U' R D2 R' U R D2 R2 x"
+         },
+         {  
+            "moves":"y l U' R D2 R' U R D2 R2"
+         },
+         {  
+            "moves":"y' x L U' L D2 L' U L D2 L2"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"l' R' D2 R U R' D2 R U' R x'",
+      "pigStage":"pll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"543dd6c2-6452-4d1b-8400-7468a231db55",
+      "name":"E",
+      "shortName":"e",
+      "caseGroupName":"PLL",
+      "caseGroupNameWithParents":"PLL",
+      "caseGroupShortName":"pll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"y x' R U' R' D R U R' D' R U R' D R U' R' D' x"
+         },
+         {  
+            "moves":"R2 U R' U' y R U R' U' R U R' U' R U R' y' R U' R2"
+         },
+         {  
+            "moves":"z U2 R2 F R U R' U' R U R' U' R U R' U' F' R2 U2 z'"
+         },
+         {  
+            "moves":"y x' R U' R' D R U R' u2 R' U R D R' U' R x"
+         },
+         {  
+            "moves":"y R' U' R' D' R U' R' D R U R' D' R U R' D R2"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"L R' U' R U L' U' R' U R r U R' U' r' F R F'",
+      "pigStage":"pll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"c85c1f74-db28-4958-920d-a2f525b1b804",
+      "name":"F",
+      "shortName":"f",
+      "caseGroupName":"PLL",
+      "caseGroupNameWithParents":"PLL",
+      "caseGroupShortName":"pll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"y R' U' F' R U R' U' R' F R2 U' R' U' R U R' U R"
+         },
+         {  
+            "moves":"y2 R' U2 R' d' R' F' R2 U' R' U R' F R U' F"
+         },
+         {  
+            "moves":"R' U R U' R2 F' U' F U R F R' F' R2"
+         },
+         {  
+            "moves":"M' U2 L F' R U2 r' U r' R2 U2 R2"
+         },
+         {  
+            "moves":"R' U R U' R2 y' R' U' R U y x R U R' U' R2 x'"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"R' U R U' R2 F' U' F U R F R' F' R2",
+      "pigStage":"pll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"4203c798-8d4d-459b-8839-1e56365ebfbd",
+      "name":"Ga",
+      "shortName":"ga",
+      "caseGroupName":"PLL",
+      "caseGroupNameWithParents":"PLL",
+      "caseGroupShortName":"pll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"R2 u R' U R' U' R u' R2 y' R' U R"
+         },
+         {  
+            "moves":"R2 U R' U R' U' R U' R2 D U' R' U R D'"
+         },
+         {  
+            "moves":"R2 u R' U R' U' R u' R2 F' U F"
+         },
+         {  
+            "moves":"D' R2 U R' U R' U' R U' R2 U' D R' U R"
+         },
+         {  
+            "moves":"R2 u R' U R' U' R u' R2 y L' U L"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"R2 u R' U R' U' R u' R2 y' R' U R",
+      "pigStage":"pll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"cc6b2667-0a46-4e26-8b27-6d1df7ffee9d",
+      "name":"Gb",
+      "shortName":"gb",
+      "caseGroupName":"PLL",
+      "caseGroupNameWithParents":"PLL",
+      "caseGroupShortName":"pll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"R' U' R y R2 u R' U R U' R u' R2"
+         },
+         {  
+            "moves":"R' U' R U D' R2 U R' U R U' R U' R2 D"
+         },
+         {  
+            "moves":"y F' U' F R2 u R' U R U' R u' R2"
+         },
+         {  
+            "moves":"R' d' F R2 u R' U R U' R u' R2"
+         },
+         {  
+            "moves":"D R' U' R U D' R2 U R' U R U' R U' R2"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"R' U' R y R2 u R' U R U' R u' R2",
+      "pigStage":"pll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"08a3c2c2-5472-4f2e-8132-74413505b074",
+      "name":"Gc",
+      "shortName":"gc",
+      "caseGroupName":"PLL",
+      "caseGroupNameWithParents":"PLL",
+      "caseGroupShortName":"pll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"R2 u' R U' R U R' u R2 y R U' R'"
+         },
+         {  
+            "moves":"y2 R2 F2 R U2 R U2 R' F R U R' U' R' F R2"
+         },
+         {  
+            "moves":"R2 U' R U' R U R' U R2 D' U R U' R' D"
+         },
+         {  
+            "moves":"R2 u' R U' R U R' u R2 f R' f'"
+         },
+         {  
+            "moves":"y2 L2 u' L U' L U L' u L2 y L U' L'"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"R2 u' R U' R U R' u R2 y R U' R'",
+      "pigStage":"pll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"986db7a2-795c-4165-8121-a0388f796e18",
+      "name":"Gd",
+      "shortName":"gd",
+      "caseGroupName":"PLL",
+      "caseGroupNameWithParents":"PLL",
+      "caseGroupShortName":"pll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"R U R' y' R2 u' R U' R' U R' u R2"
+         },
+         {  
+            "moves":"R U R' U' D R2 U' R U' R' U R' U R2 D'"
+         },
+         {  
+            "moves":"D' R U R' U' D R2 U' R U' R' U R' U R2"
+         },
+         {  
+            "moves":"f R f' R2 u' R U' R' U R' u R2"
+         },
+         {  
+            "moves":"y2 L U L' B2 D' R U' R' U R' u R2"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"R U R' y' R2 u' R U' R' U R' u R2",
+      "pigStage":"pll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"fc9e3aab-bd50-4c46-9b87-657f3d33af75",
+      "name":"H",
+      "shortName":"h",
+      "caseGroupName":"PLL",
+      "caseGroupNameWithParents":"PLL",
+      "caseGroupShortName":"pll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"M2 U M2 U2 M2 U M2"
+         },
+         {  
+            "moves":"M2 U' M2 U2 M2 U' M2"
+         },
+         {  
+            "moves":"R2 U2 R U2 R2 U2 R2 U2 R U2 R2"
+         },
+         {  
+            "moves":"M2 U' M2 U2 M2 U' M2"
+         },
+         {  
+            "moves":"R2 U2 R' U2 R2 U2 R2 U2 R' U2 R2"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"M2 U M2 U2 M2 U M2",
+      "pigStage":"pll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"099a2a48-c4be-474e-9c6d-f241b14f51ed",
+      "name":"Ja",
+      "shortName":"ja",
+      "caseGroupName":"PLL",
+      "caseGroupNameWithParents":"PLL",
+      "caseGroupShortName":"pll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"y R' U L' U2 R U' R' U2 R L"
+         },
+         {  
+            "moves":"L' U' L F L' U' L U L F' L2 U L"
+         },
+         {  
+            "moves":"y2 R' U2 R U R' U2 L U' R U L'"
+         },
+         {  
+            "moves":"y2 x R2 F R F' R U2 r' U r U2 x'"
+         },
+         {  
+            "moves":"L' U2 L U L' U2 R U' L U R'"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"L' U2 L U L' U2 R U' L U R'",
+      "pigStage":"pll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"1627e029-e34e-4759-a353-89b61ecdf27b",
+      "name":"Jb",
+      "shortName":"jb",
+      "caseGroupName":"PLL",
+      "caseGroupNameWithParents":"PLL",
+      "caseGroupShortName":"pll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"R U R' F' R U R' U' R' F R2 U' R'"
+         },
+         {  
+            "moves":"R U2 R' U' R U2 L' U R' U' r x"
+         },
+         {  
+            "moves":"R U2 R' U' R U2 L' U R' U' L"
+         },
+         {  
+            "moves":"L' U R U' L U2 R' U R U2 R'"
+         },
+         {  
+            "moves":"y' L U' R U2 L' U L U2 R' L'"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"R U R' F' R U R' U' R' F R2 U' R' U'",
+      "pigStage":"pll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"09825d68-1335-4a90-8937-6615897d2e71",
+      "name":"Na",
+      "shortName":"na",
+      "caseGroupName":"PLL",
+      "caseGroupNameWithParents":"PLL",
+      "caseGroupShortName":"pll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"R U R' U R U R' F' R U R' U' R' F R2 U' R' U2 R U' R'"
+         },
+         {  
+            "moves":"L U' R U2 L' U R' L U' R U2 L' U R'"
+         },
+         {  
+            "moves":"z U R' D R2 U' R D' U R' D R2 U' R D' z'"
+         },
+         {  
+            "moves":"r' D r U2 r' D r U2 r' D r U2 r' D r U2 r' D r"
+         },
+         {  
+            "moves":"R U' L U2 R' U L' R U' L U2 R' U L'"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"L U' R U2 L' U R' L U' R U2 L' U R'",
+      "pigStage":"pll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"6e4cbfa1-d144-4b42-800e-26fbe5c5a0d9",
+      "name":"Nb",
+      "shortName":"nb",
+      "caseGroupName":"PLL",
+      "caseGroupNameWithParents":"PLL",
+      "caseGroupShortName":"pll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"R' U L' U2 R U' L R' U L' U2 R U' L"
+         },
+         {  
+            "moves":"R' U R U' R' F' U' F R U R' F R' F' R U' R"
+         },
+         {  
+            "moves":"z D' R U' R2 D R' U D' R U' R2 D R' U z'"
+         },
+         {  
+            "moves":"z U' R D' R2 U R' D U' R D' R2 U R' D z'"
+         },
+         {  
+            "moves":"r D r' U2 r D r' U2 r D r' U2 r D r' U2 r D r'"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"R' U L' U2 R U' L R' U L' U2 R U' L",
+      "pigStage":"pll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"f6f17828-f85c-4d26-857f-d6d262789456",
+      "name":"Ra",
+      "shortName":"ra",
+      "caseGroupName":"PLL",
+      "caseGroupNameWithParents":"PLL",
+      "caseGroupShortName":"pll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"y R U R' F' R U2 R' U2 R' F R U R U2 R'"
+         },
+         {  
+            "moves":"L U2 L' U2 L F' L' U' L U L F L2"
+         },
+         {  
+            "moves":"y R U' R' U' R U R D R' U' R D' R' U2 R'"
+         },
+         {  
+            "moves":"y2 R U2 R' U2 R B' R' U' R U R B R2"
+         },
+         {  
+            "moves":"y2 R U2 R' U' R' F' R U2 R U2 R' F R U' R'"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"L U2 L' U2 L F' L' U' L U L F L2",
+      "pigStage":"pll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"571d87d2-c1dc-4116-8a86-f439754ee027",
+      "name":"Rb",
+      "shortName":"rb",
+      "caseGroupName":"PLL",
+      "caseGroupNameWithParents":"PLL",
+      "caseGroupShortName":"pll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"R' U2 R U2 R' F R U R' U' R' F' R2"
+         },
+         {  
+            "moves":"R' U2 R' D' R U' R' D R U R U' R' U' R"
+         },
+         {  
+            "moves":"y R2 F R U R U' R' F' R U2 R' U2 R"
+         },
+         {  
+            "moves":"y' R U2 R' U2 R' F R2 U' R' U' R U R' F' R U R' U R U2 R'"
+         },
+         {  
+            "moves":"y2 r' F2 r F R U' R' U' F' U' r U' r' F"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"R' U2 R U2 R' F R U R' U' R' F' R2",
+      "pigStage":"pll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"69f71f03-9773-49f0-8dad-15e14f8c8a54",
+      "name":"T",
+      "shortName":"t",
+      "caseGroupName":"PLL",
+      "caseGroupNameWithParents":"PLL",
+      "caseGroupShortName":"pll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"R U R' U' R' F R2 U' R' U' R U R' F'"
+         },
+         {  
+            "moves":"R U R' U' R' F R2 U' R' U F' L' U L"
+         },
+         {  
+            "moves":"R2 U R2 U' R2 U' D R2 U' R2 U R2 D'"
+         },
+         {  
+            "moves":"y2 L' U' L U L F' L2 U L U L' U' L F"
+         },
+         {  
+            "moves":"y F2 D R2 U' R2 F2 D' L2 U L2 U'"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"R U R' U' R' F R2 U' R' U' R U R' F'",
+      "pigStage":"pll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"9073656d-5584-4f1f-b353-e4dc12e07531",
+      "name":"Ua",
+      "shortName":"ua",
+      "caseGroupName":"PLL",
+      "caseGroupNameWithParents":"PLL",
+      "caseGroupShortName":"pll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"y2 R U' R U R U R U' R' U' R2"
+         },
+         {  
+            "moves":"R2 U' R' U' R U R U R U' R"
+         },
+         {  
+            "moves":"y2 M2 U M U2 M' U M2"
+         },
+         {  
+            "moves":"M2 U M' U2 M U M2"
+         },
+         {  
+            "moves":"R U R' U R' U' R2 U' R' U R' U R"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"R2 U' R' U' R U R U R U' R",
+      "pigStage":"pll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"2df78301-1293-4067-9b26-2221cf5e55e9",
+      "name":"Ub",
+      "shortName":"ub",
+      "caseGroupName":"PLL",
+      "caseGroupNameWithParents":"PLL",
+      "caseGroupShortName":"pll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"y2 R2 U R U R' U' R' U' R' U R'"
+         },
+         {  
+            "moves":"R' U R' U' R' U' R' U R U R2"
+         },
+         {  
+            "moves":"y2 M2 U' M U2 M' U' M2"
+         },
+         {  
+            "moves":"M2 U' M' U2 M U' M2"
+         },
+         {  
+            "moves":"y2 L' U L' U' L' U' L' U L U L2"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"R' U R' U' R' U' R' U R U R2",
+      "pigStage":"pll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"b5cb1456-6c59-4bb6-ac3c-e2d8ba528a91",
+      "name":"V",
+      "shortName":"v",
+      "caseGroupName":"PLL",
+      "caseGroupNameWithParents":"PLL",
+      "caseGroupShortName":"pll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"R' U R' d' R' F' R2 U' R' U R' F R F"
+         },
+         {  
+            "moves":"R' U R' U' y R' F' R2 U' R' U R' F R F"
+         },
+         {  
+            "moves":"z D' R2 D R2 U R' D' R U' R U R' D R U'"
+         },
+         {  
+            "moves":"R U2 R' D R U' R U' R U R2 D R' U' R D2"
+         },
+         {  
+            "moves":"R' U2 R U2 L U' R' U L' U L U' R U L'"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"R' U R' d' R' F' R2 U' R' U R' F R F",
+      "pigStage":"pll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"32491791-a6e1-4ee8-9d5e-13db6639a389",
+      "name":"Y",
+      "shortName":"y",
+      "caseGroupName":"PLL",
+      "caseGroupNameWithParents":"PLL",
+      "caseGroupShortName":"pll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"F R U' R' U' R U R' F' R U R' U' R' F R F'"
+         },
+         {  
+            "moves":"F R' F R2 U' R' U' R U R' F' R U R' U' F'"
+         },
+         {  
+            "moves":"R2 U' R2 U' R2 U R' F' R U R2 U' R' F R"
+         },
+         {  
+            "moves":"R2 U' R2 U' R2 U y' R U R' B2 R U' R'"
+         },
+         {  
+            "moves":"y2 R' U2 R' F' R2 U' R' F' U' F R U R' F U2 R"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"F R U' R' U' R U R' F' R U R' U' R' F R F'",
+      "pigStage":"pll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"5d0e660a-871f-4468-a28b-86a5a4614ca7",
+      "name":"Z",
+      "shortName":"z",
+      "caseGroupName":"PLL",
+      "caseGroupNameWithParents":"PLL",
+      "caseGroupShortName":"pll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"M2 U M2 U M' U2 M2 U2 M'"
+         },
+         {  
+            "moves":"y M2 U' M2 U' M' U2 M2 U2 M'"
+         },
+         {  
+            "moves":"M' U' M2 U' M2 U' M' U2 M2"
+         },
+         {  
+            "moves":"R' U' R2 U R U R' U' R U R U' R U' R'"
+         },
+         {  
+            "moves":"y R' U' R U' R U R U' R' U R U R2 U' R'"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"M2 U M2 U M' U2 M2 U2 M'",
+      "pigStage":"pll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   }
+]

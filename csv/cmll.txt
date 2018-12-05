@@ -1,0 +1,1322 @@
+[  
+   {  
+      "id":"46f3885d-417d-4191-85cf-e08d71027d1a",
+      "name":"CMLL AS 1",
+      "shortName":"cmllas1",
+      "caseGroupName":"CMLL",
+      "caseGroupNameWithParents":"CMLL",
+      "caseGroupShortName":"cmll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"U R U2 R' U' R U' R'"
+         },
+         {  
+            "moves":"R' U' R U' R' U2 R"
+         },
+         {  
+            "moves":"U2 L' U' L U' L' U2 L"
+         },
+         {  
+            "moves":"U r U2 R' U' R U' r'"
+         },
+         {  
+            "moves":"U' L U2 L' U' L U' L'"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"R' U' R U' R' U2 R",
+      "pigStage":"cmll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"ec6bc034-338b-4445-9deb-71ce2fa473f2",
+      "name":"CMLL AS 2",
+      "shortName":"cmllas2",
+      "caseGroupName":"CMLL",
+      "caseGroupNameWithParents":"CMLL",
+      "caseGroupShortName":"cmll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"U2 R2 D R' U R D' R' U R' U' R U' R'"
+         },
+         {  
+            "moves":"U2 l' U R U' L2 U2 R' U R U2 L2 x'"
+         },
+         {  
+            "moves":"U R' U' R U' R' U R' D' R U R' D R2"
+         },
+         {  
+            "moves":"U R U2 R2 F2 R F' R' F2 R2 U2 R'"
+         },
+         {  
+            "moves":"U2 L' U' L U L F' L' F L' U' L U' L' U2 L"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"y2 R2 D R' U R D' R' U R' U' R U' R'",
+      "pigStage":"cmll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"c8948305-3e2d-424a-95b5-42a4037ef470",
+      "name":"CMLL AS 3",
+      "shortName":"cmllas3",
+      "caseGroupName":"CMLL",
+      "caseGroupNameWithParents":"CMLL",
+      "caseGroupShortName":"cmll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"U2 F' r U r' U2 r' F2 r"
+         },
+         {  
+            "moves":"U2 F' L F L' U2 L' U2 L"
+         },
+         {  
+            "moves":"U' x' F U' R U L' U2 R' U2 R"
+         },
+         {  
+            "moves":"U F R U' R' U R U2 R' U' F'"
+         },
+         {  
+            "moves":"x' U' R U l' U2 R' U2 R"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"y' x' F U' R U L' U2 R' U2 R",
+      "pigStage":"cmll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"d05c0541-6cd0-4e21-9af4-56b9440c238c",
+      "name":"CMLL AS 4",
+      "shortName":"cmllas4",
+      "caseGroupName":"CMLL",
+      "caseGroupNameWithParents":"CMLL",
+      "caseGroupShortName":"cmll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"U2 R U2 R' U2 R' F R F'"
+         },
+         {  
+            "moves":"U2 R U2 r' U2 R' F R F' M'"
+         },
+         {  
+            "moves":"U2 r U2 r' U2 R' F R F'"
+         },
+         {  
+            "moves":"U2 R U2 R' U2 r' F R F' M'"
+         },
+         {  
+            "moves":"L U2 L' U2 r' U L U' x"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"y2 R U2 R' U2 R' F R F'",
+      "pigStage":"cmll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"3baed922-c4d2-4f20-b53a-832a4dbf59df",
+      "name":"CMLL AS 5",
+      "shortName":"cmllas5",
+      "caseGroupName":"CMLL",
+      "caseGroupNameWithParents":"CMLL",
+      "caseGroupShortName":"cmll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"U2 L' U R U' L U R'"
+         },
+         {  
+            "moves":"R' U L U' R U L'"
+         },
+         {  
+            "moves":"U2 R' F R F' r U r'"
+         },
+         {  
+            "moves":"U2 r' F R F' r U R'"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"R' U L U' R U L'",
+      "pigStage":"cmll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"24631be1-591d-475e-bd1d-2544724d133c",
+      "name":"CMLL AS 6",
+      "shortName":"cmllas6",
+      "caseGroupName":"CMLL",
+      "caseGroupNameWithParents":"CMLL",
+      "caseGroupShortName":"cmll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"R U R' F' R U2 R' U' R U' R' F R U' R'"
+         },
+         {  
+            "moves":"U' R' U' R U' R' U R' F R F' U R"
+         },
+         {  
+            "moves":"L' U' L U' L F' L' F L' U2 L"
+         },
+         {  
+            "moves":"R U2 R' F R' F' R U' R U' R'"
+         },
+         {  
+            "moves":"U2 R' U' R U' L U' R' U L' U2 R"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"y2 R' U' R U' L U' R' U L' U2 R",
+      "pigStage":"cmll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"37200cd0-7a8d-4876-af0c-517ad1b21554",
+      "name":"CMLL H 1",
+      "shortName":"cmllh1",
+      "caseGroupName":"CMLL",
+      "caseGroupNameWithParents":"CMLL",
+      "caseGroupShortName":"cmll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"R U2 R' U' R U R' U' R U' R' "
+         },
+         {  
+            "moves":"U' R U R' U R U' R' U R U2 R'"
+         },
+         {  
+            "moves":"r U' r' U' r U r' U r U r'"
+         },
+         {  
+            "moves":"R' F R U R' F R U' R' F' R"
+         },
+         {  
+            "moves":"U' R' U' R U' R' U R U' R' U2 R"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"R U2 R' U' R U R' U' R U' R' ",
+      "pigStage":"cmll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"05bd593c-52b0-4014-be83-adcd8069d5bf",
+      "name":"CMLL H 2",
+      "shortName":"cmllh2",
+      "caseGroupName":"CMLL",
+      "caseGroupNameWithParents":"CMLL",
+      "caseGroupShortName":"cmll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"U' R U R' U R U L' U R' U' L"
+         },
+         {  
+            "moves":"U2 r U' r2 D' r U' r' D r2 U r'"
+         },
+         {  
+            "moves":"U' R' F' R U2 R U2 R' F U' R U' R'"
+         },
+         {  
+            "moves":"U' R U R' U R U r' F R' F' r"
+         },
+         {  
+            "moves":"r U' r' F U2 r2 F r U' r"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"y' R U R' U R U L' U R' U' L",
+      "pigStage":"cmll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"57c8654d-67d7-42e8-b36f-72a6827d968e",
+      "name":"CMLL H 3",
+      "shortName":"cmllh3",
+      "caseGroupName":"CMLL",
+      "caseGroupNameWithParents":"CMLL",
+      "caseGroupShortName":"cmll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"U R U2 R2 F R F' U2 R' F R F'"
+         },
+         {  
+            "moves":"U R U2 R2 U' R U' R' U2 F R F'"
+         },
+         {  
+            "moves":"U2 R' F' R U2 R' F2 R U' F U F'"
+         },
+         {  
+            "moves":"R' F2 D R2 U R2 D' F2 R"
+         },
+         {  
+            "moves":"U F R U' R' U R U2 R' U' R U R' U' F'"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"L' U2 y R U2 R U2 R' U2 F y x",
+      "pigStage":"cmll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"06127bfe-7bc8-4c1e-97ec-b42cbd9ef0e1",
+      "name":"CMLL H 4",
+      "shortName":"cmllh4",
+      "caseGroupName":"CMLL",
+      "caseGroupNameWithParents":"CMLL",
+      "caseGroupShortName":"cmll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"F R U R' U' R U R' U' R U R' U' F'"
+         },
+         {  
+            "moves":"y' x' U' R U' R' U2 R' F r U' R U2 r' x"
+         },
+         {  
+            "moves":"R' F R U2 R' F' R U F R U R' U F'"
+         },
+         {  
+            "moves":"F U R U' R' U R U' R' U R U' R' F'"
+         },
+         {  
+            "moves":"F' U' L' U L U' L' U L U' L' U L F"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"F R U R' U' R U R' U' R U R' U' F'",
+      "pigStage":"cmll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"8e4509b0-0270-4ea0-81ce-ab044824c875",
+      "name":"CMLL L 1",
+      "shortName":"cmlll1",
+      "caseGroupName":"CMLL",
+      "caseGroupNameWithParents":"CMLL",
+      "caseGroupShortName":"cmll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"U' R U2 R' U' R U R' U' R U R' U' R U' R'"
+         },
+         {  
+            "moves":"U R U2 R' U' R U' R' U2 R U R' U R U2 R'"
+         },
+         {  
+            "moves":"F' R D2 R' F U2 F' R D2 R' F"
+         },
+         {  
+            "moves":"U2 R' U' R U' R' U R U' R' U R U' R' U2 R"
+         },
+         {  
+            "moves":"U R U R' U R U2 R' U R' U' R U' R' U2 R"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"y' R U2 R' U' R U R' U' R U R' U' R U' R'",
+      "pigStage":"cmll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"8e2108f5-6bfc-48ab-b5c4-de62b37ac13f",
+      "name":"CMLL L 2",
+      "shortName":"cmlll2",
+      "caseGroupName":"CMLL",
+      "caseGroupNameWithParents":"CMLL",
+      "caseGroupShortName":"cmll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"R' U2 R' D' R U2 R' D R2"
+         },
+         {  
+            "moves":"U2 F U2 F' U' R' F' R U' R' F' R"
+         },
+         {  
+            "moves":"U2 R' F2 R' U' R F2 R' U R2"
+         },
+         {  
+            "moves":"U2 L' U2 L' D' L U2 L' D L2"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"R' U2 R' D' R U2 R' D R2",
+      "pigStage":"cmll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"49fa8b86-b4ec-4ae1-ac22-045440a104a7",
+      "name":"CMLL L 3",
+      "shortName":"cmlll3",
+      "caseGroupName":"CMLL",
+      "caseGroupNameWithParents":"CMLL",
+      "caseGroupShortName":"cmll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"U R U2 R D R' U2 R D' R2"
+         },
+         {  
+            "moves":"R' F' R U R' U' R' F R2 U' R' U2 R"
+         },
+         {  
+            "moves":"U R' U' R U2 L' U R' U' L U' R"
+         },
+         {  
+            "moves":"U' l U R' D R U2 R' D' R U l'"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"y R' U' R U2 L' U R' U' L U' R",
+      "pigStage":"cmll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"58beec92-45d3-4f41-8e72-8ece9c47000b",
+      "name":"CMLL L 4",
+      "shortName":"cmlll4",
+      "caseGroupName":"CMLL",
+      "caseGroupNameWithParents":"CMLL",
+      "caseGroupShortName":"cmll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"U F R' F' R U R U' R'"
+         },
+         {  
+            "moves":"l U' R' D R U R' D' x"
+         },
+         {  
+            "moves":"U2 R2 D R' U R D' R' U' R'"
+         },
+         {  
+            "moves":"U' L' U' L' U R U' L U x'"
+         },
+         {  
+            "moves":"U2 r U' L' D L U r' B'"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"y' L' U' L' U R U' L U x'",
+      "pigStage":"cmll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"ad912d3a-f8e2-43ea-b887-b6b14c76d4f1",
+      "name":"CMLL L 5",
+      "shortName":"cmlll5",
+      "caseGroupName":"CMLL",
+      "caseGroupNameWithParents":"CMLL",
+      "caseGroupShortName":"cmll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"U F R U' R' U' R U R' F'"
+         },
+         {  
+            "moves":"U l' U R D' R' U' l B"
+         },
+         {  
+            "moves":"U2 F' r U R' U' r' F R"
+         },
+         {  
+            "moves":"U' R' U r U f R' f'"
+         },
+         {  
+            "moves":"U' x L' D L U' L' D' L U x'"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"y' x L' D L U' L' D' L U x'",
+      "pigStage":"cmll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"26ee501f-d93e-427a-9bfb-33489e109551",
+      "name":"CMLL L 6",
+      "shortName":"cmlll6",
+      "caseGroupName":"CMLL",
+      "caseGroupNameWithParents":"CMLL",
+      "caseGroupShortName":"cmll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"U R U2 R2 F R F' R U2 R'"
+         },
+         {  
+            "moves":"U r U2 R2 F R F' R U2 r'"
+         },
+         {  
+            "moves":"U' R' U' R U R' F' R U R' U' R' F R2"
+         },
+         {  
+            "moves":"U' L' U2 R U' r' U2 R l U' R'"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"y' L' U2 R U' r' U2 R l U' R'",
+      "pigStage":"cmll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"fcab1cea-196d-4274-9a35-884896ab1463",
+      "name":"CMLL O 1",
+      "shortName":"cmllo1",
+      "caseGroupName":"CMLL",
+      "caseGroupNameWithParents":"CMLL",
+      "caseGroupShortName":"cmll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"U R U R' F' R U R' U' R' F R2 U' R'"
+         },
+         {  
+            "moves":"R' U L' U2 R U' R' U2 R2 x'"
+         },
+         {  
+            "moves":"U R U R' U' R' F R2 U' R' U' R U R' F'"
+         },
+         {  
+            "moves":"R' U L' U2 R U' R' U2 R L"
+         },
+         {  
+            "moves":"U R U2 R' U' R U2 L' U R' U' L"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"R' U L' U2 R U' R' U2 R2 x'",
+      "pigStage":"cmll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"29fe004f-44cd-4ab3-8385-817d9b65cae6",
+      "name":"CMLL O 2",
+      "shortName":"cmllo2",
+      "caseGroupName":"CMLL",
+      "caseGroupNameWithParents":"CMLL",
+      "caseGroupShortName":"cmll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"F R U' R' U' R U R' F' R U R' U' R' F R F'"
+         },
+         {  
+            "moves":"R' U L' U2 R U' x' U L' U2 R U' R x'"
+         },
+         {  
+            "moves":"R2 D r' U r D' R2 U' F' U' F"
+         },
+         {  
+            "moves":"r' U' r' D' r U' r' D r U r' D' r U r' D r2"
+         },
+         {  
+            "moves":"R' U R' F2 r F' U r' F2 R F' R"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"R' U L' U2 R U' x' U L' U2 R U' R x'",
+      "pigStage":"cmll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"800b641e-0a4d-4c63-bea0-95866c790179",
+      "name":"CMLL Pi 1",
+      "shortName":"cmllpi1",
+      "caseGroupName":"CMLL",
+      "caseGroupNameWithParents":"CMLL",
+      "caseGroupShortName":"cmll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"F R U R' U' R U R' U' F'"
+         },
+         {  
+            "moves":"R U2 R2 U' R2 U' R2 U2 R"
+         },
+         {  
+            "moves":"U2 F' L' U' L U L' U' L U F"
+         },
+         {  
+            "moves":"f R U R' U' R U R' U' f'"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"R U2 R2' U' R2 U' R2' U2 R",
+      "pigStage":"cmll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"7e11a190-f569-4615-acd9-d836ccfbe38e",
+      "name":"CMLL Pi 2",
+      "shortName":"cmllpi2",
+      "caseGroupName":"CMLL",
+      "caseGroupNameWithParents":"CMLL",
+      "caseGroupShortName":"cmll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"U F R' F' R U2 R U' R' U R U2 R'"
+         },
+         {  
+            "moves":"l U R' D R U' R U' R2 D' R U l'"
+         },
+         {  
+            "moves":"R' U' R U' R' U2 R U' L' U R U' L U R'"
+         },
+         {  
+            "moves":"U2 L' U2 L U L' U' L U2 L F' L' F"
+         },
+         {  
+            "moves":"U2 R U R' F' U' R U R' U' R' F R U' R' F R F'"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"R' U' R U' R' U2 R U' L' U R U' L U R'",
+      "pigStage":"cmll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"c860bece-f4aa-41ac-8fd7-87707dbfa247",
+      "name":"CMLL Pi 3",
+      "shortName":"cmllpi3",
+      "caseGroupName":"CMLL",
+      "caseGroupNameWithParents":"CMLL",
+      "caseGroupShortName":"cmll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"U' R' F R U F U' R U R' U' F'"
+         },
+         {  
+            "moves":"R' F2 D R2 U' R2 D' F2 R"
+         },
+         {  
+            "moves":"U2 F U' F' U R' F2 R U2 R' F R"
+         },
+         {  
+            "moves":"F R' F' U2 R U R' U R2 U2 R'"
+         },
+         {  
+            "moves":"U2 F R' F' R U2 F R' F' R2 U2 R'"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"L' U2 y R U2 R' U2 R' U2 F y x",
+      "pigStage":"cmll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"ac9d81c8-3c84-4572-bd31-f27b3482b46f",
+      "name":"CMLL Pi 4",
+      "shortName":"cmllpi4",
+      "caseGroupName":"CMLL",
+      "caseGroupNameWithParents":"CMLL",
+      "caseGroupShortName":"cmll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"R U2 R' U' R U R' U2 R' F R F'"
+         },
+         {  
+            "moves":"R U2 R' U2 R' F R2 U R' U' F'"
+         },
+         {  
+            "moves":"R U R' U R U2 R' U' R U' L' U R' U' L"
+         },
+         {  
+            "moves":"U F' L F L' U2 L' U L U' L' U2 L"
+         },
+         {  
+            "moves":"U F' U' L' U L2 F L' U2 L' U2 L"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"R U R' U R U2 R' U' R U' L' U R' U' L",
+      "pigStage":"cmll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"f673854a-34a4-4757-be20-b428e8512dd1",
+      "name":"CMLL Pi 5",
+      "shortName":"cmllpi5",
+      "caseGroupName":"CMLL",
+      "caseGroupNameWithParents":"CMLL",
+      "caseGroupShortName":"cmll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"U' r U' r2 D' r U r' D r2 U r'"
+         },
+         {  
+            "moves":"U2 L' U R U' L U' R' U' R U' R'"
+         },
+         {  
+            "moves":"U2 R' F R F' r U' R' U' R U' r'"
+         },
+         {  
+            "moves":"U2 r' F R F' r U' R' U' R U' R'"
+         },
+         {  
+            "moves":"R U' L' U R' U L U L' U L"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"R' U L U' R U' L' U' L U' L'",
+      "pigStage":"cmll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"b8145555-d03e-4075-b66d-a5651bf02ca7",
+      "name":"CMLL Pi 6",
+      "shortName":"cmllpi6",
+      "caseGroupName":"CMLL",
+      "caseGroupNameWithParents":"CMLL",
+      "caseGroupShortName":"cmll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"U' R' U' R' F R F' R U' R' U2 R"
+         },
+         {  
+            "moves":"U2 R' U' R U' R' U F' U F R"
+         },
+         {  
+            "moves":"L' U' L U' L' U L F R U R' F'"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"y2 R U R' U R U' y R U' R' y L'",
+      "pigStage":"cmll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"46a01d95-500c-4a8c-a231-629050279a42",
+      "name":"CMLL S 1",
+      "shortName":"cmlls1",
+      "caseGroupName":"CMLL",
+      "caseGroupNameWithParents":"CMLL",
+      "caseGroupShortName":"cmll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"R U R' U R U2 R'"
+         },
+         {  
+            "moves":"r U R' U R U2 r'"
+         },
+         {  
+            "moves":"U L' U2 L U L' U L"
+         },
+         {  
+            "moves":"U l' U2 l U L' U L"
+         },
+         {  
+            "moves":"U2 L U L' U L U2 L'"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"R U R' U R U2 R'",
+      "pigStage":"cmll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"5c64a9fa-82a6-46aa-a26a-c1895a2634b1",
+      "name":"CMLL S 2",
+      "shortName":"cmlls2",
+      "caseGroupName":"CMLL",
+      "caseGroupNameWithParents":"CMLL",
+      "caseGroupShortName":"cmll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"L' U2 L U2 L F' L' F"
+         },
+         {  
+            "moves":"r' F2 r U2 r U' r' F"
+         },
+         {  
+            "moves":"U2 R' U2 R U2 R f' U' f"
+         },
+         {  
+            "moves":"L' U2 L U2 l F' L' F M'"
+         },
+         {  
+            "moves":"R' F2 R U2 r U' r' F"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"R' F2 R U2 R U' L' U x'",
+      "pigStage":"cmll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"db26ea84-9279-4feb-99c5-44224d66c4b2",
+      "name":"CMLL S 3",
+      "shortName":"cmlls3",
+      "caseGroupName":"CMLL",
+      "caseGroupNameWithParents":"CMLL",
+      "caseGroupShortName":"cmll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"F R' F' R U2 R U2 R'"
+         },
+         {  
+            "moves":"x U R' U' L U2 R U2 R'"
+         },
+         {  
+            "moves":"F R' F' R U2 r U2 r'"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"x U R' U' L U2 R U2 R'",
+      "pigStage":"cmll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"77d58dd9-2390-42d3-97a8-902642ac44b5",
+      "name":"CMLL S 4",
+      "shortName":"cmlls4",
+      "caseGroupName":"CMLL",
+      "caseGroupNameWithParents":"CMLL",
+      "caseGroupShortName":"cmll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"U' R U R' U R U' R D R' U' R D' R2"
+         },
+         {  
+            "moves":"R U R' U' R' F R F' R U R' U R U2 R'"
+         },
+         {  
+            "moves":"r U' L' U R2 U2 L U' L' U2 R2 x'"
+         },
+         {  
+            "moves":"U2 R2 D' R U' R' D R U' R U R' U R"
+         },
+         {  
+            "moves":"U R' U' R U' R2 F' R U R U' R' F U2 R"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"y' R U R' U R U' R D R' U' R D' R2",
+      "pigStage":"cmll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"9026ed18-21cc-4e3a-85aa-4af5594d2660",
+      "name":"CMLL S 5",
+      "shortName":"cmlls5",
+      "caseGroupName":"CMLL",
+      "caseGroupNameWithParents":"CMLL",
+      "caseGroupShortName":"cmll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"R U' L' U R' U' L"
+         },
+         {  
+            "moves":"L F' L' F l' U' l"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"R U' L' U R' U' L",
+      "pigStage":"cmll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"336fe148-b2d7-4af5-86b0-66d1be878b76",
+      "name":"CMLL S 6",
+      "shortName":"cmlls6",
+      "caseGroupName":"CMLL",
+      "caseGroupNameWithParents":"CMLL",
+      "caseGroupShortName":"cmll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"U2 R U R' U R' F R F' R U2 R'"
+         },
+         {  
+            "moves":"U2 R U R' U L' U R U' L U2 R'"
+         },
+         {  
+            "moves":"U2 R U R' F' R U R' U R U2 R' F R U' R'"
+         },
+         {  
+            "moves":"R' U2 l U' R U l' U R' U R"
+         },
+         {  
+            "moves":"R U' L' U R' U L U L' U2 R U' L U R'"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"y2 R U R' U L' U R U' L U2 R'",
+      "pigStage":"cmll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"1ad16b91-6fc9-47b5-ab82-cedbbf03331e",
+      "name":"CMLL T 1",
+      "shortName":"cmllt1",
+      "caseGroupName":"CMLL",
+      "caseGroupNameWithParents":"CMLL",
+      "caseGroupShortName":"cmll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"R U2 R' U' R U' R2 U2 R U R' U R"
+         },
+         {  
+            "moves":"F R' F R2 U' R' U' R U R' F2"
+         },
+         {  
+            "moves":"r U2 R' U' R U' r2 U2 R U R' U r"
+         },
+         {  
+            "moves":"U2 R' U2 R2 B2 D B D' B R2 U2 R"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"R U2 R' U' R U' R2' U2' R U R' U R",
+      "pigStage":"cmll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"3f9d9e6a-211a-4a78-a69f-3272e6d132fe",
+      "name":"CMLL T 2",
+      "shortName":"cmllt2",
+      "caseGroupName":"CMLL",
+      "caseGroupNameWithParents":"CMLL",
+      "caseGroupShortName":"cmll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"R' U r U2 R2 F R F' r"
+         },
+         {  
+            "moves":"r' U r U2 R2 F R F' R"
+         },
+         {  
+            "moves":"R' U r U2 R2 F R F' R"
+         },
+         {  
+            "moves":"r' U r' U2 l U' l' U2 r2 B'"
+         },
+         {  
+            "moves":"U2 R U' r' U2 x' R2 U' R' U L'"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"R' U r U2 R2' F R F' R",
+      "pigStage":"cmll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"8f7d99d0-af6a-43aa-8645-f9b42206b882",
+      "name":"CMLL T 3",
+      "shortName":"cmllt3",
+      "caseGroupName":"CMLL",
+      "caseGroupNameWithParents":"CMLL",
+      "caseGroupShortName":"cmll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"U L' U' L U L F' L' F"
+         },
+         {  
+            "moves":"U R' F' r U R U' r' F"
+         },
+         {  
+            "moves":"U r' F' r U r U' r' F"
+         },
+         {  
+            "moves":"U' F R U' R' U R U R' F'"
+         },
+         {  
+            "moves":"U2 x' R U R' D R U' R' D' x"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"y' R' U' R U L U' R' U x",
+      "pigStage":"cmll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"436ddff8-f044-4414-b690-139672218d49",
+      "name":"CMLL T 4",
+      "shortName":"cmllt4",
+      "caseGroupName":"CMLL",
+      "caseGroupNameWithParents":"CMLL",
+      "caseGroupShortName":"cmll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"r' D' r U r' D r U' r U r'"
+         },
+         {  
+            "moves":"F R' U' R F' R' U F' R"
+         },
+         {  
+            "moves":"U R' D R U' R U R' U R' D' R"
+         },
+         {  
+            "moves":"U2 F R U R' U' R U' R' U' R U R' F'"
+         },
+         {  
+            "moves":"U R U2 R' F2 R U2 R' U2 R' F2 R"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"F U' L' U R2 U' L U R' l' U' x'",
+      "pigStage":"cmll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"bc15eba1-256d-4d41-b20d-3456759ace9b",
+      "name":"CMLL T 5",
+      "shortName":"cmllt5",
+      "caseGroupName":"CMLL",
+      "caseGroupNameWithParents":"CMLL",
+      "caseGroupShortName":"cmll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"U' R U R' U' R' F R F'"
+         },
+         {  
+            "moves":"R U R D R' U' R D' R2"
+         },
+         {  
+            "moves":"U' r U R' U' L' U l F'"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"y' R U R' U' R' F R F'",
+      "pigStage":"cmll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"90c86261-9087-49ca-b3f3-15ba16821da0",
+      "name":"CMLL T 6",
+      "shortName":"cmllt6",
+      "caseGroupName":"CMLL",
+      "caseGroupNameWithParents":"CMLL",
+      "caseGroupShortName":"cmll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"U2 r2 D' r U r' D r2 U' r' U' r"
+         },
+         {  
+            "moves":"R' U R2 D r' U2 r D' R2 U' R "
+         },
+         {  
+            "moves":"R2 U' R F R' U R2 U' R' F' R"
+         },
+         {  
+            "moves":"R U' R' U' R U' R' F' U' F U2 R U R'"
+         },
+         {  
+            "moves":"r2 D r' U' r D' r2 U r U r'"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"R' U R2 D r' U2 r D' R2' U' R ",
+      "pigStage":"cmll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"abee07b6-fc0b-4086-b125-d040172f8476",
+      "name":"CMLL U 1",
+      "shortName":"cmllu1",
+      "caseGroupName":"CMLL",
+      "caseGroupNameWithParents":"CMLL",
+      "caseGroupShortName":"cmll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"R' U' R U' R' U2 R2 U R' U R U2 R'"
+         },
+         {  
+            "moves":"R2 F U' F U F2 R2 U' R' F R"
+         },
+         {  
+            "moves":"U' F2 R U' R' U R U R2 F' R F'"
+         },
+         {  
+            "moves":"U2 R U R' U R U2 R2 U' R U' R' U2 R"
+         },
+         {  
+            "moves":"r' U' R U' R' U2 R2 U R' U R U2 r'"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"R' U' R U' R' U2 R2 U R' U R U2 R'",
+      "pigStage":"cmll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"4537c1e7-7771-47b5-b89a-50fd5900a351",
+      "name":"CMLL U 2",
+      "shortName":"cmllu2",
+      "caseGroupName":"CMLL",
+      "caseGroupNameWithParents":"CMLL",
+      "caseGroupShortName":"cmll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"U' F R2 D R' U R D' R2 U' F'"
+         },
+         {  
+            "moves":"U' L U' R' U L' U2 F' U F R"
+         },
+         {  
+            "moves":"R' F R U' R' U' R U R' F' R U R' U' R' F R F' R"
+         },
+         {  
+            "moves":"U R' U L U' R U2 F U' F' L'"
+         },
+         {  
+            "moves":"U R B U2 F U' B' U F' U2 R'"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"y' F R2 D R' U R D' R2' U' F'",
+      "pigStage":"cmll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"4c73ab83-3b3d-4fa9-a9c4-929fc55e464e",
+      "name":"CMLL U 3",
+      "shortName":"cmllu3",
+      "caseGroupName":"CMLL",
+      "caseGroupNameWithParents":"CMLL",
+      "caseGroupShortName":"cmll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"U2 R2 D R' U2 R D' R' U2 R'"
+         },
+         {  
+            "moves":"r U' r' U' r U' r' U' F' U2 F"
+         },
+         {  
+            "moves":"L F' L' U' L F' L' U' F' U2 F"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"y2 R2 D R' U2 R D' R' U2 R'",
+      "pigStage":"cmll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"eebe7283-4359-48b7-87cd-0caa2becd5b5",
+      "name":"CMLL U 4",
+      "shortName":"cmllu4",
+      "caseGroupName":"CMLL",
+      "caseGroupNameWithParents":"CMLL",
+      "caseGroupShortName":"cmll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"U2 R' F2 R U2 R U2 R' F2 R U2 R'"
+         },
+         {  
+            "moves":"y2 r U' r' U r' D' r U' r' D r"
+         },
+         {  
+            "moves":"U2 R' F U' R F R' U R F'"
+         },
+         {  
+            "moves":"U' R' D R U' R U' R' U R' D' R"
+         },
+         {  
+            "moves":"U' l U R' D R U' x U R' U' F'"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"y2 R' F U' R F R' U R F'",
+      "pigStage":"cmll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"5dab9dc3-3111-4580-9974-f9a2a249345f",
+      "name":"CMLL U 5",
+      "shortName":"cmllu5",
+      "caseGroupName":"CMLL",
+      "caseGroupNameWithParents":"CMLL",
+      "caseGroupShortName":"cmll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"R2 D' R U2 R' D R U2 R"
+         },
+         {  
+            "moves":"R' F R U R' F R U F U2 F'"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"R2 D' R U2 R' D R U2 R",
+      "pigStage":"cmll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   },
+   {  
+      "id":"0843603d-3f5e-4d36-8f1e-c27f26dc42be",
+      "name":"CMLL U 6",
+      "shortName":"cmllu6",
+      "caseGroupName":"CMLL",
+      "caseGroupNameWithParents":"CMLL",
+      "caseGroupShortName":"cmll",
+      "puzzleName":"3x3",
+      "puzzleShortName":"333",
+      "caseAlgs":[  
+         {  
+            "moves":"U' F R U R' U' F'"
+         },
+         {  
+            "moves":"U F U R U' R' F'"
+         },
+         {  
+            "moves":"U2 R' U' F' U F R"
+         }
+      ],
+      "imageType":"puzzleImageGenerator",
+      "pigPuzzle":"3",
+      "pigCase":"y' F R U R' U' F'",
+      "pigStage":"cmll",
+      "pigView":"plan",
+      "caseTypeEnum":"permutation"
+   }
+]
