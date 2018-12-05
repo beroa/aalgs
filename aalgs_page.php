@@ -1,9 +1,11 @@
 <?php
 // aalgs_page2.php - Page 2
 // Written by: Charles Kaplan, November 2018
-	
+	require('layout/header.php'); 
+	require('layout/navbar.php'); 
+
 	include('aalgs_mysqli.php'); 
-	echo "<table width='$width' align='center' style='$page_style'>";
+	echo "<table align='center'>";
 	$query = "SELECT * from algcase where setid = 1";
 	$algcases = mysqli_query($mysqli, $query);
 	if (!$algcases) $msg = "Query Error [$query] " . mysqli_error();
@@ -30,4 +32,6 @@
 	}
 	echo "</table>";
 	$mysqli->close();
+
+	require('layout/footer.php'); 
 ?>

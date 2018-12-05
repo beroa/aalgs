@@ -9,16 +9,27 @@
 		}
 		else $msg = NULL;
 	
-// Output	
-	echo "<table width='$width' align='center' style='$page_style;'>\n
-		  <tr><td align='center'>
-		  <br>This is the Home Page<br><br>
-		  <table style='font-size:2em'>
-		  <tr>
-		  <td style='border:1px solid black;'>CMLL</td>
-		  <td style='border:1px solid black;'>PLL</td>
-		  </table>
-		  </td></tr>\n
-		  </table>";
+// // Output	
+// 	echo "<table align='center'>\n
+// 		  <tr><td align='center'>
+// 		  <br>This is the Home Page<br><br>
+// 		  <table style='font-size:2em'>
+// 		  <tr>
+// 		  <td style='border:1px solid black;'>CMLL</td>
+// 		  <td style='border:1px solid black;'>PLL</td>
+// 		  </table>
+// 		  </td></tr>\n
+// 		  </table>";
 
 ?>
+
+<table align='center'>
+	<tr><td align='center'>
+	<br>This is the Home Page<br><br>
+	<table style='font-size:2em'>
+	<tr>
+	<td style='border:1px solid black;'>CMLL</td>
+	<td style='border:1px solid black;'>PLL</td>
+	</table>
+	</td></tr>
+</table>

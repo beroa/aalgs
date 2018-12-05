@@ -38,7 +38,8 @@ if(isset($_POST['submit'])){
 $title = 'Login';
 
 //include header template
-require('layout/header.php'); 
+require('layout/header.php');
+require('layout/navbar.php');
 ?>
 
 	

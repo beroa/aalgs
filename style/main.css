@@ -6,3 +6,12 @@ a {
 	/*color: #EF1F2F;*/
 	text-decoration: none;
 }
+
+#footer {
+	color:yellow;
+	background-color:blue;
+	font-size:75%;
+	font-weight:bold;
+	font-family:Arial,Helvetica;
+	border:1px solid black;
+}
