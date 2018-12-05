@@ -2,9 +2,6 @@
 // aalgs_logoff.php - Logoff
 // Written by:  Charles Kaplan, NOvember 2018
 
-// Verify that program was called from aalgs.php
-	require('aalgs_landing.php');
-
 // Logoff by unsetting session variables  
 	if ($logon) {
 		$tempname = $name; 

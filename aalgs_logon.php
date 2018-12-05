@@ -1,9 +1,6 @@
 <?PHP
 // aalgs_logon.php - Logon to aalgs Website
 // Written by:  Charles Kaplan, November 2018
-
-// Verify that program was called from aalgs_php
-	require('aalgs_landing.php');
   
 // Variables  
 	$msg 		= NULL;								// Error Message

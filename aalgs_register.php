@@ -1,8 +1,5 @@
 <?php require('includes/config.php');
 
-// Check Landing Variable is Set
-	require('aalgs_landing.php');
-
 //if logged in redirect to members page
 if( $user->is_logged_in() ){ header('Location: memberpage.php'); exit(); }
 

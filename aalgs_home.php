@@ -1,9 +1,6 @@
 <?php
 // aalgs_home.php - Home Page
 // Written by: Charles Kaplan, November 2018
-
-// Check Landing Variable is Set
-	include('aalgs_landing.php');
 	
 // Capture Message	
 	if (isset($_SESSION['msg'])) {

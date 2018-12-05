@@ -1,9 +1,6 @@
 <?php
 // aalgs_page2.php - Page 2
 // Written by: Charles Kaplan, November 2018
-
-// Check Landing Variable is Set
-	include('aalgs_landing.php');
 	
 	include('aalgs_mysqli.php'); 
 	echo "<table width='$width' align='center' style='$page_style'>";
