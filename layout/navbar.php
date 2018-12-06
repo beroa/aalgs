@@ -24,7 +24,7 @@ require_once('includes/config.php');
 				else {
 					while($res = $result->fetch_array()) {
 						$name = $res['name'];
-						echo "<a class='dropdown-item' href='page?algset=$name'>$name</a>";
+						echo "<a class='dropdown-item' href='set?name=$name'>$name</a>";
 			  		}
 				}
 			?>

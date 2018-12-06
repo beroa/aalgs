@@ -5,10 +5,11 @@
 
 	require('mysqli.php'); 
 	
-	if(isset($_GET['algset'])){
-		$algset = $_GET['algset'];
-		echo "<h1 id='algset'>$algset</h1>";
-		$query = "SELECT * from algset where name = '$algset'";
+	// determine setid from name
+	if(isset($_GET['name'])){
+		$name = $_GET['name'];
+		echo "<h1 id='setname'>$name</h1>";
+		$query = "SELECT * from algset where name = '$name'";
 		$result = mysqli_query($mysqli, $query) or die (mysqli_error($mysqli)); 
 		while($res = $result->fetch_array()) {
 			$setid = $res['id'];
