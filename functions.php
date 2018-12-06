@@ -1,6 +1,4 @@
 <?php
-// aalgs_functions.php - String Handling Functions
-// Written by:  Prof. Kaplan, November 2018
 
 // cleanse_input - sanitize input and reformat 
 	function cleanse_input($phrase, $format) {

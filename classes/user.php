@@ -55,6 +55,12 @@ class User extends Password{
 		}
 	}
 
+	public function getUsername() {
+		if ($this->is_logged_in()) {
+			return $_SESSION['username'];
+		}
+	}
+
 }
 
 

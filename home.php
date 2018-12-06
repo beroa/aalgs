@@ -1,6 +1,4 @@
 <?php
-// aalgs_home.php - Home Page
-// Written by: Charles Kaplan, November 2018
 	
 // Capture Message	
 	if (isset($_SESSION['msg'])) {

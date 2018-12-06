@@ -4,7 +4,7 @@
 	require('layout/header.php'); 
 	require('layout/navbar.php'); 
 
-	include('aalgs_mysqli.php'); 
+	include('mysqli.php'); 
 	echo "<table align='center'>";
 	$query = "SELECT * from algcase where setid = 1";
 	$algcases = mysqli_query($mysqli, $query);
