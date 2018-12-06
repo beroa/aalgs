@@ -15,21 +15,32 @@ require_once('includes/config.php');
 		  3x3
 		</a>
 		<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-		  <a class="dropdown-item" href="page">CMLL</a>
-		  <a class="dropdown-item" href="#">Another action</a>
-		  <a class="dropdown-item" href="#">Something else here</a>
+			<?php 
+				// get set names from db and put in dropdown
+				include('mysqli.php'); 
+				$query = "SELECT * from algset";
+				$result = mysqli_query($mysqli, $query);
+				if (!$result) echo "Query Error [$query] " . mysqli_error();
+				else {
+					while($res = $result->fetch_array()) {
+						$name = $res['name'];
+						echo "<a class='dropdown-item' href='page?algset=$name'>$name</a>";
+			  		}
+				}
+			?>
 		</div>
 	  </li>
 	</ul>
 	<ul class="navbar-nav ml-auto">
 		<?php 
+			// display login/logout/register as appropriate
 			$username = $user->getUsername();
 			if( $user->is_logged_in() ) {
 				echo "<li class='nav-link disabled'>$username</li>";
 				echo '<li class="nav-item"><a class="nav-link" href="logout">Logout</a></li>';
 			} else {
 				echo '<li class="nav-item"><a class="nav-link" href="register.php">Register</a></li>
-		<li class="nav-item"><a class="nav-link" href="login.php">Log In</a></li>';
+						<li class="nav-item"><a class="nav-link" href="login.php">Log In</a></li>';
 			}
 		?>
 	</ul>

@@ -29,5 +29,6 @@
 	// 	  <tr><td align='center' style='$hdr_style2'><br>Hello, $name [$role]<br><br></td></tr>\n
 	// 	  </table>";
 		  
-//		  <tr><td align='left'   style='$hdr_style3'>$page has been visited " . $_SESSION[$page] . " times</td></td> 		  
+//		  <tr><td align='left'   style='$hdr_style3'>$page has been visited " . $_SESSION[$page] . " times</td></td> 	
+echo $msg;	  
 ?> -->

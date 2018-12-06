@@ -15,3 +15,7 @@ a {
 	font-family:Arial,Helvetica;
 	border:1px solid black;
 }
+
+#algset {
+	text-align: center;
+}
