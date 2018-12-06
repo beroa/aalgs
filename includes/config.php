@@ -12,7 +12,7 @@ define('DBPASS','');
 define('DBNAME','a');
 
 //application address
-define('DIR','localhost/loginregister/');
+define('DIR','localhost/aalgs/');
 define('SITEEMAIL','alansalgs@gmail.com');
 
 try {

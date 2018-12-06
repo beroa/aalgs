@@ -33,36 +33,5 @@ require_once('includes/config.php');
 			}
 		?>
 	</ul>
-
-	
-
   </div>
-  <!-- 
-		<div class="container">
-			<div id="navbar-main">
-
-				<ul class="nav navbar-nav">
-					<li class="nav-item"><a href="aalgs.php">Home</a></li>
-					<li class="nav-item"><a href="page.php">CMLL</a></li>
-					 <li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						  Dropdown link
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-						  <a class="dropdown-item" href="#">Action</a><br>
-						  <a class="dropdown-item" href="#">Another action</a><br>
-						  <a class="dropdown-item" href="#">Something else here</a>
-						</div>
-					</li>
-				</ul>
-
-				<ul class="nav navbar-nav navbar-right">
-					<li *ngIf="!auth.isLoggedIn()"><a href="register.php">Register</a></li>
-					<li *ngIf="!auth.isLoggedIn()"><a href="login.php">Log In</a></li>
-					<li *ngIf="auth.isLoggedIn()"><a href="logout">Logout</a></li>
-				</ul>
-				
-			</div>
-		</div>
-	</div> -->
 </nav>

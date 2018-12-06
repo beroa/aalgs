@@ -1,6 +1,4 @@
 <?php
-// aalgs_page2.php - Page 2
-// Written by: Charles Kaplan, November 2018
 	require('layout/header.php'); 
 	require('layout/navbar.php'); 
 

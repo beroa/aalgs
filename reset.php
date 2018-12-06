@@ -74,6 +74,7 @@ $title = 'Reset Account';
 
 //include header template
 require('layout/header.php');
+require('layout/navbar.php');
 ?>
 
 <div class="container">

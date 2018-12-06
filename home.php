@@ -1,11 +1,11 @@
 <?php
 	
-// Capture Message	
-	if (isset($_SESSION['msg'])) {
-		$msg = $_SESSION['msg'] . '<br><br>'; 	
-		unset($_SESSION['msg']); 
-		}
-		else $msg = NULL;
+// // Capture Message	
+// 	if (isset($_SESSION['msg'])) {
+// 		$msg = $_SESSION['msg'] . '<br><br>'; 	
+// 		unset($_SESSION['msg']); 
+// 		}
+// 		else $msg = NULL;
 	
 // // Output	
 // 	echo "<table align='center'>\n
