@@ -19,3 +19,12 @@ a {
 #setname {
 	text-align: center;
 }
+
+.container {
+	background: #d0ecd9;
+	border: 1px solid black;
+	padding: 2em;
+}
+/*#navbarDropdownMenuLink:hover > div.dropdown-menu {
+    display: block;    
+}*/
