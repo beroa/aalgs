@@ -44,9 +44,7 @@ require('layout/navbar.php');
 
 	
 <div class="container">
-
 	<div class="row">
-
 	    <div class="col-xs-12 col-sm-8 col-md-6 offset-sm-2 offset-md-3">
 			<form role="form" method="post" action="" autocomplete="off">
 				<h2>Please Login</h2>

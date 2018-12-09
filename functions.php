@@ -4,14 +4,14 @@ function getFeed($feed_url) {
     $content = file_get_contents($feed_url);
     $x = new SimpleXmlElement($content);
      
-    echo "<ul style='list-style-type: none;'>";
+    echo "<table id='rss_wca_table'>";
      
     foreach($x->channel->item as $entry) {
     	$date = new DateTime($entry->pubDate);
     	$date_form = $date->format('Y-m-d');
-        echo "<li>$date_form: <a href='$entry->link' title='$entry->title'>" . $entry->title . "</a></li>";
+        echo "<tr><td nowrap valign='top' class='cellpadding'>$date_form</td> <td><a href='$entry->link' title='$entry->title'>" . $entry->title . "</a></td>";
     }
-    echo "</ul>";
+    echo "</table>";
 }
 
 // cleanse_input - sanitize input and reformat 
