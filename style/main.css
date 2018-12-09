@@ -2,11 +2,6 @@
 	padding: 0 5px;
 }
 
-a {
-	/*color: #EF1F2F;*/
-	text-decoration: none;
-}
-
 #footer {
 	color:yellow;
 	background-color:blue;
@@ -23,8 +18,15 @@ a {
 .container {
 	background: #d0ecd9;
 	border: 1px solid black;
-	padding: 2em;
+	padding: 1.5em;
 }
-/*#navbarDropdownMenuLink:hover > div.dropdown-menu {
-    display: block;    
+
+#rss_wca {
+	margin-top: 2em;
+	white-space: nowrap;
+	overflow-x: scroll;
+}
+
+/*.text-center {
+	text-align: center;
 }*/

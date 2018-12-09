@@ -1,5 +1,19 @@
 <?php
 
+function getFeed($feed_url) {
+    $content = file_get_contents($feed_url);
+    $x = new SimpleXmlElement($content);
+     
+    echo "<ul style='list-style-type: none;'>";
+     
+    foreach($x->channel->item as $entry) {
+    	$date = new DateTime($entry->pubDate);
+    	$date_form = $date->format('Y-m-d');
+        echo "<li>$date_form: <a href='$entry->link' title='$entry->title'>" . $entry->title . "</a></li>";
+    }
+    echo "</ul>";
+}
+
 // cleanse_input - sanitize input and reformat 
 	function cleanse_input($phrase, $format) {
 		$phrase = filter_var($phrase, FILTER_SANITIZE_STRING);

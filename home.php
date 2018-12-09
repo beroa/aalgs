@@ -1,36 +1,37 @@
 <?php
-	
-// // Capture Message	
-// 	if (isset($_SESSION['msg'])) {
-// 		$msg = $_SESSION['msg'] . '<br><br>'; 	
-// 		unset($_SESSION['msg']); 
-// 		}
-// 		else $msg = NULL;
-
+include('functions.php');
 ?>
 
-<table align='center'>
-	<tr><td align='center'>
-	<h1>This is the homepage.</h1>
-	<br>
-	<h2>Choose an Algset</h2>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12 col-xl-8 offset-xl-2 text-center">
+			<h1>This is the homepage.</h1><br>
+			<h2>Choose an Algset</h2>
+			<div class="d-flex flex-wrap justify-content-center">
+				<?php 
+					// get set names from db and put in table
+					include('mysqli.php'); 
+					$query = "SELECT * from algset";
+					$result = mysqli_query($mysqli, $query);
+					if (!$result) echo "Query Error [$query] " . mysqli_error();
+					else {
+						while($res = $result->fetch_array()) {
+							$name = $res['name'];
+							echo "<div class='p-2' style='border: 1px solid black;'><a href='set?name=$name'>$name</a></div>";
+				  		}
+					}
+				?>
+			</div>
+		</div>
+	</div>
+</div>
 
-	<table style='font-size:2em;'>
-	<tr>
-	<?php 
-		// get set names from db and put in table
-		include('mysqli.php'); 
-		$query = "SELECT * from algset";
-		$result = mysqli_query($mysqli, $query);
-		if (!$result) echo "Query Error [$query] " . mysqli_error();
-		else {
-			while($res = $result->fetch_array()) {
-				$name = $res['name'];
-				echo "<td style='border: 1px solid black;padding:.5em'><a href='set?name=$name'>$name</a></td>";
-	  		}
-		}
-	?>
-	</table>
+<div id="rss_wca" class="container">
+	<div class="row">
+		<div class="col-lg-12 col-xl-10 offset-xl-1">
+			<h3>WCA News</h3>
+			<?php getFeed("https://www.worldcubeassociation.org/rss"); ?>
+		</div>
+	</div>
+</div>
 
-	</td></tr>
-</table>

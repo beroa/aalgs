@@ -12,18 +12,3 @@
 
 </head>
 <body>
-
-<!-- <?php
-// aalgs_header.php - Page Header
-// Written by: Charles Kaplan, November 2018
-// include("./aalgs_variables.php");
-
-// Page Header
-	// echo "<table width='$width' align='center' cellpadding='0' cellspacing='0' style='border:1px solid black;'>\n
-	// 	  <tr><td align='center' style='$hdr_style'>$title</td></tr>\n
-	// 	  <tr><td align='center' style='$hdr_style2'><br>Hello, $name [$role]<br><br></td></tr>\n
-	// 	  </table>";
-		  
-//		  <tr><td align='left'   style='$hdr_style3'>$page has been visited " . $_SESSION[$page] . " times</td></td> 	
-echo $msg;	  
-?> -->
