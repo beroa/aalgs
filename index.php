@@ -1,8 +1,7 @@
 <?php
-
-	include("layout/header.php"); 			// Page Header 
-	include("layout/navbar.php");			// Navigation Bar
-	include("home.php");					// Page Content
-	include("layout/footer.php");			// Page Footer
-	
+	// include header and footer here, and on every page
+	include("layout/header.php");
+	include("layout/navbar.php");
+	include("home.php");
+	include("layout/footer.php");
 ?>

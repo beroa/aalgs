@@ -49,19 +49,22 @@ class User extends Password{
 		session_destroy();
 	}
 
-	public function is_logged_in(){
+	public function isLoggedIn(){
 		if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true){
 			return true;
 		}
 	}
 
 	public function getUsername() {
-		if ($this->is_logged_in()) {
+		if ($this->isLoggedIn()) {
 			return $_SESSION['username'];
 		}
 	}
 
+	public function getMemberID() {
+		if ($this->isLoggedIn()) {
+			return $_SESSION['memberID'];
+		}
+	}
 }
-
-
 ?>

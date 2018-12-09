@@ -2,7 +2,6 @@
 //include config
 require_once('includes/config.php');
 ?>
-
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-2">
 	<a class="navbar-brand" href=".">Aalgs</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,7 +34,7 @@ require_once('includes/config.php');
 		<?php 
 			// display login/logout/register as appropriate
 			$username = $user->getUsername();
-			if( $user->is_logged_in() ) {
+			if( $user->isLoggedIn() ) {
 				echo "<li class='nav-link disabled'>$username</li>";
 				echo '<li class="nav-item"><a class="nav-link" href="logout">Logout</a></li>';
 			} else {

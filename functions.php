@@ -1,16 +1,17 @@
 <?php
+require_once('mysqli.php');
 
 // gets an rss feed and displays it as a table
 function getFeed($feed_url) {
     $content = file_get_contents($feed_url);
     $x = new SimpleXmlElement($content);
      
-    echo "<table id='rss_wca_table'>";
+    echo "<table id='rss_wca_table' align='center'>";
    
     foreach($x->channel->item as $entry) {
     	$date = new DateTime($entry->pubDate);
     	$date_form = $date->format("Y-m-d");
-        echo "<tr><td nowrap valign='top' class='cellpadding'>$date_form</td> <td><a href='$entry->link' title='$entry->title'>" . $entry->title . "</a></td>";
+        echo "<tr><td nowrap valign='top' class='cellpadding'>$date_form</td> <td><a href='entry->link' title='$entry->title'>" . $entry->description . "</a></td>";
     }
     echo "</table>";
 }
@@ -21,7 +22,7 @@ function showAlgs($setid) {
 	echo "<table align='center'>";
 	$query = "SELECT * from algcase where setid = $setid";
 	$algcases = mysqli_query($mysqli, $query);
-	if (!$algcases) $msg = "Query Error [$query] " . mysqli_error();
+	if (!$algcases) echo "Query Error [$query] " . mysqli_error();
 	else {
 		while($case = $algcases->fetch_array()) {
 			echo "<tr>";
@@ -29,10 +30,10 @@ function showAlgs($setid) {
 			echo "<td width='15%' align='center' style='font-size=30px;'>$name</td>";
 			$pigcase = $case['pigcase'];
 			echo "<td width='25%' align='center' ><img src=\"visualcube/visualcube.php?fmt=svg&view=plan&size=200&case=$pigcase&stage=cmll\" alt=\"Kiwi standing on oval\"></td>";
-			$caseId = $case['id'];
-			$query = "SELECT * from algorithm where caseid = $caseId";
+			$caseid = $case['id'];
+			$query = "SELECT * from algorithm where caseid = $caseid";
 			$algorithms = mysqli_query($mysqli, $query);
-			if (!$algorithms) $msg = "Query Error [$query] " . mysqli_error();
+			if (!$algorithms) echo "Query Error [$query] " . mysqli_error();
 			else {
 				echo "<td width='60%' align=left><ul style='display:inline-block;text-align:left;'>";
 				while($alg = $algorithms->fetch_array()) {
@@ -50,11 +51,10 @@ function showAlgs($setid) {
 function showAlgsFlex($name, $setid, $pigstage, $pigview, $login) {
 	echo "<h1 class=text-center>$name
 	</h1>";
-	require("mysqli.php");
 	echo "<div class='d-flex flex-wrap justify-content-center'>";
 	$query = "SELECT * from algcase where setid = $setid";
 	$algcases = mysqli_query($mysqli, $query);
-	if (!$algcases) $msg = "Query Error [$query] " . mysqli_error();
+	if (!$algcases) echo "Query Error [$query] " . mysqli_error();
 	else {
 		while($case = $algcases->fetch_array()) {
 			echo "<div class='p-2 text-center flex-item'>";
@@ -65,10 +65,10 @@ function showAlgsFlex($name, $setid, $pigstage, $pigview, $login) {
 			$imgsrc = "visualcube/visualcube.php?fmt=svg&size=128&case=$pigcase&stage=$pigstage";
 			if ($pigview != "") $imgsrc = $imgsrc . " .&view=$pigview";
 			echo "<img src=\"$imgsrc\" alt='$name image'>";
-			$caseId = $case['id'];
-			$query = "SELECT * from algorithm where caseid = $caseId order by caseid";
+			$caseid = $case['id'];
+			$query = "SELECT * from algorithm where caseid = $caseid order by caseid";
 			$algorithms = mysqli_query($mysqli, $query);
-			if (!$algorithms) $msg = "Query Error [$query] " . mysqli_error();
+			if (!$algorithms) echo "Query Error [$query] " . mysqli_error();
 			else {
 				echo "<br><ul class='simple-list'>";
 				while($alg = $algorithms->fetch_array()) {
@@ -83,79 +83,38 @@ function showAlgsFlex($name, $setid, $pigstage, $pigview, $login) {
 	echo "</div>";
 }
 
-function showAlgsDropdown($setname, $setid, $pigstage, $pigview, $login) {
+function showAlgsDropdown($setname, $setid, $pigstage, $pigview, $login, $mysqli) {
 	echo "<h1 class=text-center>$setname</h1>";
-	require("mysqli.php");
 	echo "<div class='d-flex flex-wrap justify-content-center'>";
-	$query = "SELECT * from algcase where setid = $setid";
-	$algcases = mysqli_query($mysqli, $query);
-	if (!$algcases) $msg = "Query Error [$query] " . mysqli_error();
-	else {
-		while($case = $algcases->fetch_array()) {
-			echo "<div class='p-2 text-center flex-item'>";
-			$name = $case['name'];
-			echo "<h2 style='font-size:1.2em;line-height:.8;'>$name</h2>";
-			$pigcase = $case['pigcase'];
+	$algcases = getAlgcaseBySetid($setid, $mysqli);
+	while($case = $algcases->fetch_array()) {
+		$name = $case['name'];
+		$pigcase = $case['pigcase'];
+		$caseid = $case['id'];
 
-			$imgsrc = "visualcube/visualcube.php?fmt=svg&size=128&case=$pigcase&stage=$pigstage";
-			if ($pigview != "") $imgsrc = $imgsrc . "&view=$pigview";
-			echo "<img src=\"$imgsrc\" alt='$name image' class='m-0 align-self-end'>";
+		$imgsrc = "visualcube/visualcube.php?fmt=svg&size=128&case=$pigcase&stage=$pigstage";
+		if ($pigview != "") $imgsrc = $imgsrc . "&view=$pigview";
 
-			$caseId = $case['id'];
-			$query = "SELECT * from algorithm where caseid = $caseId order by caseid";
-			$algorithms = mysqli_query($mysqli, $query);
-			if (!$algorithms) $msg = "Query Error [$query] " . mysqli_error();
-			else {
-				$first = true;
-				while($alg = $algorithms->fetch_array()) {
-					$moves = $alg['moves'];
-					if ($first) { $first = false;
-						echo "
-							<div class='btn-group'>
-							<button type='button' class='btn btn-info dropdown-toggle' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false' style='width:80px;white-space:normal;text-align:left;'>
-							$moves
-							</button>
-							<div class='dropdown-menu'>";
-					}					
-					echo "<a class='dropdown-item' href='#'>$moves</a>";
-				}
-				echo "</div></div>";
-			}
-			echo "</div>";
-		}
+		echo "<div class='p-2 text-center flex-item'>";
+		echo "<h2 style='font-size:1.2em;line-height:.8;'>$name</h2>";
+		echo "<img src=\"$imgsrc\" alt='$name image' class='m-0'>";
+
+		$algorithm = getAlgorithmByCaseid($caseid, $mysqli);
+		$first = true;
+		while($alg = $algorithm->fetch_array()) {
+			$moves = $alg['moves'];
+			if ($first) { $first = false;
+				echo "
+				<div class='btn-group'>
+				<button type='button' class='btn btn-info dropdown-toggle' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false' style='width:120px;white-space:normal;text-align:left;'>$moves</button>
+				<div class='dropdown-menu'>";
+			}					
+			echo "<a class='dropdown-item' href=\"saveAlg?caseid=$caseid&setid=$setid&setname=$setname&moves=$moves\">$moves</a>";
+		} echo "</div></div>";
 		echo "</div>";
 	}
+	echo "</div>";
 }
-// <div class='btn-group'>
-//   <button type='button' class='btn btn-danger dropdown-toggle' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
-//     Action
-//   </button>
-//   <div class='dropdown-menu'>
-//     <a class='dropdown-item' href='#'>Action</a>
-//     <a class='dropdown-item' href='#'>Another action</a>
-//     <a class='dropdown-item' href='#'>Something else here</a>
-//     <div class='dropdown-divider'></div>
-//     <a class='dropdown-item' href='#'>Separated link</a>
-//   </div>
-// </div>
-
-
-function getUserCaseAlgs($userid, $setid) {
-	require("mysqli.php");
-	// echo "<div class='d-flex flex-wrap justify-content-center'>";
-	$query = "SELECT * from user_alg where $userid = $setid";
-	$algcases = mysqli_query($mysqli, $query);
-	if (!$algcases) $msg = "Query Error [$query] " . mysqli_error();
-	else {
-		while($case = $algcases->fetch_array()) {
-			echo "<div class='p-2 text-center flex-item'>";
-			$name = $case['name'];
-			echo "<h2>$name</h2>";
-			$pigcase = $case['pigcase'];
-		}
-	}
-}
-
 
 // cleanse_input - sanitize input and reformat 
 	function cleanse_input($phrase, $format) {

@@ -25,12 +25,12 @@ for ($i = 0; $i < count($json); $i++) {
 		$pigstage = $json[$i]->pigStage;
 		$pigview = $json[$i]->pigView;;
 		$sql = "INSERT INTO algset (id, name, pigcase, pigstage, pigview) VALUES ('$setid', '$setname', '$pigcase', '$pigstage', '$pigview');";
-			if ($conn->query($sql) === TRUE) {
-				$last_id = $conn->insert_id;
-		    	echo "New record created successfully";
-			} else {
-		    	echo "Error: " . $sql . "<br>" . $conn->error;
-			}
+		if ($conn->query($sql) === TRUE) {
+			$last_id = $conn->insert_id;
+	    	echo "New record created successfully";
+		} else {
+	    	echo "Error: " . $sql . "<br>" . $conn->error;
+		}
 		$first = false;
 	}
 
