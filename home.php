@@ -4,7 +4,7 @@ include('functions.php');
 
 <div class="container">
 	<div class="row">
-		<div class="col-lg-12 col-xl-8 offset-xl-2 text-center">
+		<div class="col-lg-12 col-xl-8 offset-xl-2 text-center" id='home'>
 			<h1>This is the homepage.</h1><br>
 			<h2>Choose an Algset</h2>
 			<div class="d-flex flex-wrap justify-content-center">
@@ -26,9 +26,9 @@ include('functions.php');
 	</div>
 </div>
 
-<div id="rss_wca" class="container">
+<div id="rss-wca" class="container">
 	<div class="row">
-		<div class="col-lg-12 col-xl-10 offset-xl-1">
+		<div class="col-lg-12 col-xl-8 offset-xl-2">
 			<h3>WCA News</h3>
 			<?php getFeed("https://www.worldcubeassociation.org/rss"); ?>
 		</div>
