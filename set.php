@@ -21,12 +21,6 @@
 	} else $setid = 0;
 ?>
 
-<script>
-	function myFunction() {
-	  document.getElementById("demo").innerHTML = "Paragraph changed.";
-	}
-</script>
-
 <div class="container">
 	<div class="row">
 		<div class="col-12 text-center no-padding">
@@ -38,7 +32,7 @@
 						</div> ";
 						showAlgsFlex($name, $setid, $pigstage, $pigview, 0);
 				} else {
-					showAlgsFlex($name, $setid, $pigstage, $pigview, 1);
+					showAlgsDropdown($name, $setid, $pigstage, $pigview, 1);
 				}
 			?>
 		</div>
