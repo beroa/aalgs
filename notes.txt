@@ -21,3 +21,7 @@ user_alg
 
 
 https://daveismyname.blog/login-and-registration-system-with-php
+
+TRUNCATE `a`.`algset`;
+TRUNCATE `a`.`algcase`;
+TRUNCATE `a`.`algorithm`;

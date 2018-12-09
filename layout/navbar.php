@@ -3,7 +3,7 @@
 require_once('includes/config.php');
 ?>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-2">
 	<a class="navbar-brand" href=".">Aalgs</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 	<span class="navbar-toggler-icon"></span>
@@ -46,4 +46,3 @@ require_once('includes/config.php');
 	</ul>
   </div>
 </nav>
-<br>

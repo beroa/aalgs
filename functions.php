@@ -47,7 +47,9 @@ function showAlgs($setid) {
 }
 
 // runs queries and shows algs in flexbox format
-function showAlgsFlex($setid) {
+function showAlgsFlex($name, $setid, $pigstage, $pigview, $login) {
+	echo "<h1 class=text-center>$name
+	</h1>";
 	require('mysqli.php');
 	echo "<div class='d-flex flex-wrap justify-content-center'>";
 	$query = "SELECT * from algcase where setid = $setid";
@@ -59,9 +61,12 @@ function showAlgsFlex($setid) {
 			$name = $case['name'];
 			echo "<h2>$name</h2>";
 			$pigcase = $case['pigcase'];
-			echo "<img src=\"visualcube/visualcube.php?fmt=svg&view=plan&size=128&case=$pigcase&stage=cmll\" alt='$name image'>";
+
+			$imgsrc = "visualcube/visualcube.php?fmt=svg&size=128&case=$pigcase&stage=$pigstage";
+			if ($pigview != "") $imgsrc = $imgsrc . "&view=$pigview";
+			echo "<img src=\"$imgsrc\" alt='$name image'>";
 			$caseId = $case['id'];
-			$query = "SELECT * from algorithm where caseid = $caseId";
+			$query = "SELECT * from algorithm where caseid = $caseId order by caseid";
 			$algorithms = mysqli_query($mysqli, $query);
 			if (!$algorithms) $msg = "Query Error [$query] " . mysqli_error();
 			else {
@@ -77,6 +82,7 @@ function showAlgsFlex($setid) {
 	}
 	echo "</div>";
 }
+
 
 // cleanse_input - sanitize input and reformat 
 	function cleanse_input($phrase, $format) {

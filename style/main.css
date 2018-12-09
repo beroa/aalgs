@@ -1,23 +1,6 @@
-html, body {
-    margin: 0;
-    padding: 0;
-}
 
 .bg-danger, .bg-success {
 	padding: 0 5px;
-}
-
-#footer {
-	color:yellow;
-	background-color:blue;
-	font-size:75%;
-	font-weight:bold;
-	font-family:Arial,Helvetica;
-	border:1px solid black;
-}
-
-#setname {
-	text-align: center;
 }
 
 .container {
@@ -27,11 +10,13 @@ html, body {
 #home {
 	background: #d0ecd9;
 	border: 1px solid black;
-	padding: 1.5em;
+	padding: 1em;
 }
 
 #rss-wca {
 	margin-top: 2em;
+	border: 1px solid black;
+	padding: 1.5em;
 }
 
 .cellpadding {
@@ -43,9 +28,16 @@ html, body {
 }
 
 .flex-item {
-	border: 1px solid black;
+	border: 2px solid black;
 	background:#d0ecd9;
 	margin: 5px;
+}
+
+.flex-item-white {
+	border: 1px solid black;
+	background: white;
+	margin: 5px;
+	font-size:1.5em;
 }
 
 .simple-list {
@@ -56,11 +48,11 @@ html, body {
 	font-weight: bold;
 }
 
-@media (min-width: 1650px) {
+/*@media (min-width: 1250px) {
     .container{
         max-width: 1600px;
     }
     .row{
         max-width: 1600px;
     }
-}
+}*/
