@@ -1,6 +1,7 @@
 <?php
 //include config
 require_once('includes/config.php');
+include('mysqli.php'); 
 ?>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-2">
 	<a class="navbar-brand" href=".">Aalgs</a>
@@ -14,9 +15,7 @@ require_once('includes/config.php');
 		  3x3
 		</a>
 		<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-			<?php 
-				// get set names from db and put in dropdown
-				include('mysqli.php'); 
+			<?php // get set names from db and put in dropdown
 				$query = "SELECT * from algset";
 				$result = mysqli_query($mysqli, $query);
 				if (!$result) echo "Query Error [$query] " . mysqli_error();
@@ -31,8 +30,7 @@ require_once('includes/config.php');
 	  </li>
 	</ul>
 	<ul class="navbar-nav ml-auto">
-		<?php 
-			// display login/logout/register as appropriate
+		<?php // display login/logout/register as appropriate
 			$username = $user->getUsername();
 			if( $user->isLoggedIn() ) {
 				echo "<li class='nav-link disabled'>$username</li>";

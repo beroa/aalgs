@@ -282,7 +282,7 @@
 				$cube = case_cube($prtns[$j].$moves.$frtns[$i]);
 //println("testing cube: ".$prtns[$j].$moves.$frtns[$i]);
 //printcube($cube, 3);
-				if(is_member($cube, $group_id)){
+				if(is_user($cube, $group_id)){
 					$prtn = $prtns[$j];
 					$frtn = $frtns[$i];
 					$moves = "$prtn$moves$frtn";
@@ -443,9 +443,9 @@
 	
 // TODO: This function failes on alg... x' U' R U L' U2 R' U' L' U' L2 u r2 U' z ... part of ZBLL-PI, or H
 // U' l2 u R2 U' R' U' L' U2 R' U L U' ... from ZBLL-PI
-	// Returns true if the cube state is a member of the given group
-	function is_member($cube, $group_id){
-//echo "is member of? $group_id :";
+	// Returns true if the cube state is a user of the given group
+	function is_user($cube, $group_id){
+//echo "is user of? $group_id :";
 //printcube($cube, 3);
 		global $CUBIE_MOVES;
 		// Check cube from all y rotation angles
@@ -453,7 +453,7 @@
 //println("|".$cube[2][0].", ".$cube[2][1].", ".$cube[2][2].", ".$cube[2][3]."|");
 //printcube($cube, 3);
 			for($j = 0; $j < 4; $j++){
-				if(is_member_strict($cube, $group_id)) return true;
+				if(is_user_strict($cube, $group_id)) return true;
 				// Rotate cube
 				$cube = prod($cube, $CUBIE_MOVES[move_id('y')], 1);
 			}
@@ -463,23 +463,23 @@
 		return false;
 	}
 	
-	// Returns true if the cube state is a member of the given group when AUF is allowed
-	function is_member_auf($cube, $group_id){
-//echo "is member of? $group_id :";
+	// Returns true if the cube state is a user of the given group when AUF is allowed
+	function is_user_auf($cube, $group_id){
+//echo "is user of? $group_id :";
 //printcube($cube, 3);
 		global $CUBIE_MOVES;
 		// Check cube from all auf rotation angles
 		for($i = 0; $i < 4; $i++){
 //println("|".$cube[2][0].", ".$cube[2][1].", ".$cube[2][2].", ".$cube[2][3]."|");
 //printcube($cube, 3);
-			if(is_member_strict($cube, $group_id)) return true;
+			if(is_user_strict($cube, $group_id)) return true;
 			// Rotate U-Layer
 			$cube = prod($cube, $CUBIE_MOVES[move_id('U')], 1);
 		}
 		return false;
 	}
 	
-	function is_member_strict($cube, $group_id){
+	function is_user_strict($cube, $group_id){
 		global $VCUBE;
 		switch($group_id){
 			case  1: if(match($cube, $VCUBE['2OFL']    )) return true; break; // OLL
