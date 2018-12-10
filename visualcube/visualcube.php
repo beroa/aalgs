@@ -327,7 +327,7 @@
 		// Retrieve facelet def
 		if(!$uf){ $uf = array_key_exists('fd', $_REQUEST) ? $_REQUEST['fd'] : $DEFAULTS['fd'];
 		if(preg_match('/^[udlrfbnot]+$/', $uf)){
-			// Map from face names to numeric face ID
+			// Map from face names to numeric face id
 			$fd_map = Array('u' => $U, 'r' => $R, 'f' => $F, 'd' => $D, 'l' => $L, 'b' => $B, 'n' => $N, 'o' => $O, 't' => $T);
 			$nf = strlen($uf);
 			for($fc = 0; $fc < 6; $fc++){ for($i = 0; $i < $dim * $dim; $i++){

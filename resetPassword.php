@@ -111,12 +111,12 @@ require('layout/navbar.php');
 					<div class="row">
 						<div class="col-xs-6 col-sm-6 col-md-6">
 							<div class="form-group">
-								<input type="password" name="password" ID="password" class="form-control input-lg" placeholder="Password" tabindex="1">
+								<input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" tabindex="1">
 							</div>
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-6">
 							<div class="form-group">
-								<input type="password" name="passwordConfirm" ID="passwordConfirm" class="form-control input-lg" placeholder="Confirm Password" tabindex="1">
+								<input type="password" name="passwordConfirm" id="passwordConfirm" class="form-control input-lg" placeholder="Confirm Password" tabindex="1">
 							</div>
 						</div>
 					</div>

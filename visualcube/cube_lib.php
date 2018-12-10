@@ -307,7 +307,7 @@
 				// Generate identifier for state (depends on alg purpose)
 				$s = cube_state($cube, $group_id);
 //println($s);
-				// Set it as main ID if lowest found so-far
+				// Set it as main id if lowest found so-far
 				if($s < $state && $s != -1) $state = $s;
 				// Rotate cube by y
 				$cube = prod($cube, $CUBIE_MOVES[move_id('y')], 1);

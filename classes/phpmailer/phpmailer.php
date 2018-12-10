@@ -213,7 +213,7 @@ class PhpMailer
     public $Hostname = '';
 
     /**
-     * An ID to be used in the Message-Id header.
+     * An id to be used in the Message-Id header.
      * If empty, a unique id will be generated.
      * @type string
      */
@@ -383,7 +383,7 @@ class PhpMailer
     public $DKIM_selector = '';
 
     /**
-     * DKIM Identity.
+     * DKIM identity.
      * Usually the email address used as the source of the email
      * @type string
      */
@@ -841,7 +841,7 @@ class PhpMailer
     /**
      * Return the Message-ID header of the last email.
      * Technically this is the value from the last time the headers were created,
-     * but it's also the message ID of the last sent message except in
+     * but it's also the message id of the last sent message except in
      * pathological cases.
      * @return string
      */
@@ -2547,7 +2547,7 @@ class PhpMailer
      * This is used in HTML messages that embed the images
      * the HTML refers to using the $cid value.
      * @param string $path Path to the attachment.
-     * @param string $cid Content ID of the attachment; Use this to reference
+     * @param string $cid Content id of the attachment; Use this to reference
      *        the content when using an embedded image in HTML.
      * @param string $name Overrides the attachment name.
      * @param string $encoding File encoding (see $Encoding).
@@ -2592,7 +2592,7 @@ class PhpMailer
      * Be sure to set the $type to an image type for images:
      * JPEG images use 'image/jpeg', GIF uses 'image/gif', PNG uses 'image/png'.
      * @param string $string The attachment binary data.
-     * @param string $cid Content ID of the attachment; Use this to reference
+     * @param string $cid Content id of the attachment; Use this to reference
      *        the content when using an embedded image in HTML.
      * @param string $name
      * @param string $encoding File encoding (see $Encoding).
