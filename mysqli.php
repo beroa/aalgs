@@ -25,14 +25,14 @@ function insertUserAlg($userID, $caseID, $moves, $setID, $mysqli) {
 function getUserAlgBySetID($userID, $setID, $mysqli) {
 	// require("mysqli.php");
 	// echo "<div class='d-flex flex-wrap justify-content-center'>";
-	$query = "SELECT * from user_alg where userID = $userID and setID = $setID";
+	$query = "SELECT * from user_alg where userID = $userID and setID = $setID order by caseID";
 	$result = mysqli_query($mysqli, $query);
 	if (!$result) echo "Query Error [$query] " . $mysqli->error;
 	else {	return $result; }
 }
 
 function getAlgcaseBySetID($setID, $mysqli) {
-	$query = "SELECT * from algcase where setID = $setID";
+	$query = "SELECT * from algcase where setID = $setID order by caseID";
 	$result = mysqli_query($mysqli, $query);
 	if (!$result) echo "Query Error [$query] " . $mysqli->error;
 	else { return $result; }

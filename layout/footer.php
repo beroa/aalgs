@@ -4,7 +4,7 @@
 
 ?>
 
-<!-- <table id='footer' align='center' cellpadding='0' cellspacing='0'>
+<!-- <table ID='footer' align='center' cellpadding='0' cellspacing='0'>
 		  <tr><td align='center'>This is the end of the page</td></tr>
 </table>
  -->

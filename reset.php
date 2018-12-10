@@ -110,7 +110,7 @@ require('layout/navbar.php');
 				?>
 
 				<div class="form-group">
-					<input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email" value="" tabindex="1">
+					<input type="email" name="email" ID="email" class="form-control input-lg" placeholder="Email" value="" tabindex="1">
 				</div>
 
 				<hr>

@@ -6,7 +6,7 @@ function getFeed($feed_url) {
     $content = file_get_contents($feed_url);
     $x = new SimpleXmlElement($content);
      
-    echo "<table id='rss_wca_table' align='center'>";
+    echo "<table ID='rss_wca_table' align='center'>";
    
     foreach($x->channel->item as $entry) {
     	$date = new DateTime($entry->pubDate);

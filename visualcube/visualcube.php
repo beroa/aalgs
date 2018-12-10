@@ -487,7 +487,7 @@
 		// ---------------[ 3D Cube Generator properties ]---------------
 
 		// Outline width
-		$OUTLINE_WIDTH = 0.94;
+		$OUTLINE_width = 0.94;
 
 		// Stroke width
 		$sw = 0;
@@ -773,12 +773,12 @@
 
 	// Returns svg for a cube outline
 	function outline_svg($fc){
-		global $p, $dim, $cc, $OUTLINE_WIDTH;
+		global $p, $dim, $cc, $OUTLINE_width;
 		return "\t\t<polygon fill='#$cc' stroke='#$cc' points='".
-			$p[$fc][   0][   0][0]*$OUTLINE_WIDTH.','.$p[$fc][   0][   0][1]*$OUTLINE_WIDTH.' '.
-			$p[$fc][$dim][   0][0]*$OUTLINE_WIDTH.','.$p[$fc][$dim][   0][1]*$OUTLINE_WIDTH.' '.
-			$p[$fc][$dim][$dim][0]*$OUTLINE_WIDTH.','.$p[$fc][$dim][$dim][1]*$OUTLINE_WIDTH.' '.
-			$p[$fc][   0][$dim][0]*$OUTLINE_WIDTH.','.$p[$fc][   0][$dim][1]*$OUTLINE_WIDTH."'/>\n";
+			$p[$fc][   0][   0][0]*$OUTLINE_width.','.$p[$fc][   0][   0][1]*$OUTLINE_width.' '.
+			$p[$fc][$dim][   0][0]*$OUTLINE_width.','.$p[$fc][$dim][   0][1]*$OUTLINE_width.' '.
+			$p[$fc][$dim][$dim][0]*$OUTLINE_width.','.$p[$fc][$dim][$dim][1]*$OUTLINE_width.' '.
+			$p[$fc][   0][$dim][0]*$OUTLINE_width.','.$p[$fc][   0][$dim][1]*$OUTLINE_width."'/>\n";
 	}
 
 	// Returns svg for a faces facelets
