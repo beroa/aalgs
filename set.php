@@ -58,7 +58,7 @@ function showAlgsDropdown($setname, $setID, $userID, $pigstage, $pigview, $mysql
 	$algcases = getAlgcaseBySetID($setID, $mysqli);
 	$useralgs = getUserAlgBySetID($userID, $setID, $mysqli);
 
-	$useralgindex = 0;
+	$userMoves = "";
 	$useralg = $useralgs->fetch_array();
 	while($case = $algcases->fetch_array()) {
 		$name = $case['name'];
