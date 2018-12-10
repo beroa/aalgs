@@ -10,8 +10,6 @@ if (isset($_GET['setname'])) { $rtrnaddr = 'set?name=' . $_GET['setname']; }
 //logout
 if ($user->isLoggedIn()) {
 	$userid = $user->getMemberId();
-	
-	echo $userid;
 
 	insertUserAlg($userid, $caseid, $moves, $setid, $mysqli);
 }

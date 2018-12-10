@@ -30,9 +30,9 @@
 }
 
 .flex-item {
-	/*border: 1px solid black;*/
+	border: 1px solid black;
 	/*border-radius: 5%;*/
-	background:#d0ecd9;
+	background:white;
 	margin: 1px;
 	padding: 0px!important;
 }

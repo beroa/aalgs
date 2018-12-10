@@ -10,15 +10,17 @@ include('functions.php');
 			<div class="d-flex flex-wrap justify-content-center">
 				<?php 
 					// get set names from db and put in table
-					$result = getAllFromAlgset();
+					$result = getAllFromAlgset($mysqli);
 					while($res = $result->fetch_array()) {
 						$name = $res['name'];
 						$pigcase = $res['pigcase'];
 						$pigstage = $res['pigstage'];
 						$pigview = $res['pigview'];
 						if ($pigview == 'trans') $pigview = '';
-						
-						echo "<div class='p-2 flex-item-white'><a href='set?name=$name'>$name<br>
+
+						echo "
+						<div class='p-2 flex-item-white'>
+						<a href='set?name=$name'>$name<br>
 						<img src=\"visualcube/visualcube.php?fmt=svg&size=128&case=$pigcase&stage=$pigstage&view=$pigview\" alt='$name image'>
 						</a></div>";
 			  		}
