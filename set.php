@@ -1,6 +1,7 @@
 <?php
 require('layout/header.php'); 
 require('layout/navbar.php');
+require('functions.php');
 
 require_once('includes/config.php');
 
@@ -31,12 +32,10 @@ function showAlgsFlex($setname, $setID, $pigstage, $pigview, $mysqli) {
 		$pigcase = $case['pigcase'];
 		$caseID = $case['caseID'];
 
-		$imgsrc = "visualcube/visualcube.php?fmt=svg&size=128&case=$pigcase&stage=$pigstage";
-		if ($pigview != "") $imgsrc = $imgsrc . " .&view=$pigview"; 
-
 		echo "<div class='p-2 text-center flex-item'>";
-		echo "<h2>$name</h2>";
-		echo "<img src=\"$imgsrc\" alt='$name image'>";
+		echo "<h2 style='font-size:1.2em;line-height:1;'>$name</h2>";
+
+		showVisualCube($pigcase, $pigstage, $pigview);
 
 		$query = "SELECT * from algorithm where caseID = $caseID order by caseID";
 		$algorithms = mysqli_query($mysqli, $query);
@@ -53,9 +52,12 @@ function showAlgsFlex($setname, $setID, $pigstage, $pigview, $mysqli) {
 		}
 }
 
+
+
 function showAlgsDropdown($setname, $setID, $userID, $pigstage, $pigview, $mysqli) {
 	echo "<h1 class=text-center>$setname</h1>";
 	echo "<div class='d-flex flex-wrap justify-content-center'>";
+
 	// algcases and useralgs both come sorted, loop over every algcase and compare it to the next useralg
 	$algcases = getAlgcaseBySetID($setID, $mysqli);
 	$useralgs = getUserAlgBySetID($userID, $setID, $mysqli);
@@ -67,24 +69,18 @@ function showAlgsDropdown($setname, $setID, $userID, $pigstage, $pigview, $mysql
 		$pigcase = $case['pigcase'];
 		$caseID = $case['caseID'];
 
-		$imgsrc = "visualcube/visualcube.php?fmt=svg&size=128&case=$pigcase&stage=$pigstage";
-		if ($pigview != "") $imgsrc = $imgsrc . "&view=$pigview";
-
 		echo "<div class='p-2 text-center flex-item'>";
-		echo "<h2 style='font-size:1.2em;line-height:.8;'>$name</h2>";
-		echo "<img src=\"$imgsrc\" alt='$name image' class='m-0'>";
+		echo "<h2 style='font-size:1em;line-height:1;'>$name</h2>";
+
+		showVisualCube($pigcase, $pigstage, $pigview);
 
 		echo "<div class='btn-group'>";
-
 
 		if ($caseID == $useralg['caseID']) {
 			$userMoves = $useralg['moves'];
 			$useralg = $useralgs->fetch_array();
-		}
-
-		if ($userMoves != "") {
 			echo "
-				<button type='button' class='btn btn-info dropdown-toggle algbtn$caseID' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false' style='width:90px;white-space:normal;text-align:left;'>$userMoves</button>
+				<button type='button' class='btn btn-light dropdown-toggle algbtn$caseID' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false' style='font-size:1.2em;width:100px;white-space:normal;text-align:left;font-weight:bold;'>$userMoves</button>
 				<div class='dropdown-menu'>";
 		}
 
@@ -94,12 +90,14 @@ function showAlgsDropdown($setname, $setID, $userID, $pigstage, $pigview, $mysql
 			$moves = $alg['moves'];
 			if ($first && $userMoves == "") { $first = false;
 				echo "
-				<button type='button' class='btn btn-info dropdown-toggle algbtn$caseID' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false' style='width:90px;white-space:normal;text-align:left;'>$moves</button>
+				<button type='button' class='btn btn-light dropdown-toggle algbtn$caseID' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false' style='font-size:1.2em;width:100px;white-space:normal;text-align:left;font-weight:bold;'>$moves</button>
 				<div class='dropdown-menu'>";
 			}					
 			echo "<a class='dropdown-item' href=\"saveAlg?caseID=$caseID&setID=$setID&setname=$setname&moves=$moves\">$moves</a>";
-		} echo "</div></div>";
+		} 
+		echo "</div></div>";
 		echo "</div>";
+
 		$userMoves = "";
 	}
 	echo "</div>";
@@ -123,8 +121,8 @@ function showAlgsDropdown($setname, $setID, $userID, $pigstage, $pigview, $mysql
 			<?php
 				if( !$user->isLoggedIn() ) { 
 						echo 
-						"<div class='alert alert-info py-0 my-0' role='alert'>
-							If you log in, you can show only your preferred algorithms.
+						"<div class='alert alert-dark py-0 my-0' role='alert'>
+							Log in to save your favorite algorithms.
 						</div> ";
 						showAlgsFlex($setname, $setID, $pigstage, $pigview, $mysqli);
 				} else {

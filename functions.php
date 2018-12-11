@@ -1,6 +1,12 @@
 <?php
 require_once('mysqli.php');
 
+function showVisualCube($pigcase, $pigstage, $pigview) {
+	$imgsrc = "visualcube/visualcube.php?fmt=svg&size=128&case=$pigcase&stage=$pigstage";
+	if ($pigview != "") $imgsrc = $imgsrc . "&view=$pigview";
+	echo "<img src=\"$imgsrc\" alt='$pigstage image' class='m-0'>";
+}
+
 // gets an rss feed and displays it as a table
 function getFeed($feed_url) {
     $content = file_get_contents($feed_url);
