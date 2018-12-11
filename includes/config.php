@@ -9,7 +9,7 @@ date_default_timezone_set('America/New_York');
 define('DBHOST','localhost');
 define('DBUSER','root');
 define('DBPASS','');
-define('DBNAME','a');
+define('DBNAME','aalgs');
 
 //application address
 define('DIR','localhost/aalgs/');
