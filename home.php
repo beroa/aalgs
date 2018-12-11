@@ -20,7 +20,7 @@ include('functions.php');
 
 						echo "
 						<div class='p-2 flex-item-white'>
-						<a href='set?name=$name'>$name<br>
+						<a href='set?setname=$name'>$name<br>
 						<img src=\"visualcube/visualcube.php?fmt=svg&size=128&case=$pigcase&stage=$pigstage&view=$pigview\" alt='$name image'>
 						</a></div>";
 			  		}

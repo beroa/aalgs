@@ -22,7 +22,7 @@ include('mysqli.php');
 				else {
 					while($res = $result->fetch_array()) {
 						$name = $res['name'];
-						echo "<a class='dropdown-item' href='set?name=$name'>$name</a>";
+						echo "<a class='dropdown-item' href='set?setname=$name'>$name</a>";
 			  		}
 				}
 			?>

@@ -5,9 +5,9 @@ require('layout/navbar.php');
 require_once('includes/config.php');
 
 // determine setID from name
-if(isset($_GET['name'])){
-	$name = $_GET['name'];
-	$query = "SELECT * from algset where name = '$name'";
+if(isset($_GET['setname'])){
+	$setname = $_GET['setname'];
+	$query = "SELECT * from algset where name = '$setname'";
 
 	$sets = mysqli_query($mysqli, $query) or die (mysqli_error($mysqli));
 	while($set = $sets->fetch_array()) {
@@ -21,8 +21,8 @@ if(isset($_GET['name'])){
 if(isset($_GET['y'])) $y = $_GET['y']; else $y = 0;
 
 // runs queries and shows algs in flexbox format
-function showAlgsFlex($name, $setID, $pigstage, $pigview, $mysqli) {
-	echo "<h1 class=text-center>$name</h1>";
+function showAlgsFlex($setname, $setID, $pigstage, $pigview, $mysqli) {
+	echo "<h1 class=text-center>$setname</h1>";
 	echo "<div class='d-flex flex-wrap justify-content-center'>";
 
 	$algcases = getAlgcaseBySetID($setID, $mysqli);
@@ -104,13 +104,8 @@ function showAlgsDropdown($setname, $setID, $userID, $pigstage, $pigview, $mysql
 	}
 	echo "</div>";
 }
-
-// function getUserAlgs($userID, $setID, $mysqli) {
-// 	$useralgs = getUserAlgBySetID($userID, $setID, $mysqli);
-// 	return $useralgs;
-// }
-
 ?>
+
 <script>
 		$(window).on("scroll", function() {
 		  $.cookie("tempScrollTop", $(window).scrollTop());
@@ -121,36 +116,6 @@ function showAlgsDropdown($setname, $setID, $userID, $pigstage, $pigview, $mysql
 		  }
 		});
 </script>
-<!-- <input id="Y" type="hidden" name ="Y" runat="server" />
-
-<script type="text/javascript">
-  function getScrollPosition() 
-{
-        var x, y;
-        if(document.all) 
-        {
-            if($(window).scrollTop
-                    y =$(window).scrollTop;  
-            else 
-                    y = 0;
-        }
-        
-        document.getElementById('Y').value = y;
-}
-
-function setScrollPosition() 
-{
-        var y = parseInt(document.getElementById('Y').value);
-        print(y);
-        if(y == null)
-            alert('Bad Hidden Field Id!');
-        else
-             $(window).scrollTop=y;
-}
-   
-   window.setInterval('getScrollPosition()', 350);
-   window.onload = setScrollPosition;
-</script>-->
 
 <div class="container">
 	<div class="row">
@@ -161,9 +126,9 @@ function setScrollPosition()
 						"<div class='alert alert-info py-0 my-0' role='alert'>
 							If you log in, you can show only your preferred algorithms.
 						</div> ";
-						showAlgsFlex($name, $setID, $pigstage, $pigview, $mysqli);
+						showAlgsFlex($setname, $setID, $pigstage, $pigview, $mysqli);
 				} else {
-					showAlgsDropdown($name, $setID, $user->getUserID(), $pigstage, $pigview, $mysqli);
+					showAlgsDropdown($setname, $setID, $user->getUserID(), $pigstage, $pigview, $mysqli);
 				}
 			?>
 		</div>
