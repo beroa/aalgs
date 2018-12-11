@@ -18,6 +18,8 @@ if(isset($_GET['name'])){
   	}
 } else $setID = 0;
 
+if(isset($_GET['y'])) $y = $_GET['y']; else $y = 0;
+
 // runs queries and shows algs in flexbox format
 function showAlgsFlex($name, $setID, $pigstage, $pigview, $mysqli) {
 	echo "<h1 class=text-center>$name</h1>";
@@ -110,24 +112,45 @@ function showAlgsDropdown($setname, $setID, $userID, $pigstage, $pigview, $mysql
 
 ?>
 <script>
-	$(document).ready(function() {
-
-	    // If cookie is set, scroll to the position saved in the cookie.
-	    if ( $.cookie("scroll") !== null ) {
-	        $(document).scrollTop( $.cookie("scroll") );
-	    }
-
-	    // When a button is clicked...
-	    $('#submit').on("click", function() {
-
-	        // Set a cookie that holds the scroll position.
-	        $.cookie("scroll", $(document).scrollTop() );
-
-	    });
-
-	});
+		$(window).on("scroll", function() {
+		  $.cookie("tempScrollTop", $(window).scrollTop());
+		});
+		$(function() {
+		  if ($.cookie("tempScrollTop")) {
+		    $(window).scrollTop($.cookie("tempScrollTop"));
+		  }
+		});
 </script>
+<!-- <input id="Y" type="hidden" name ="Y" runat="server" />
 
+<script type="text/javascript">
+  function getScrollPosition() 
+{
+        var x, y;
+        if(document.all) 
+        {
+            if($(window).scrollTop
+                    y =$(window).scrollTop;  
+            else 
+                    y = 0;
+        }
+        
+        document.getElementById('Y').value = y;
+}
+
+function setScrollPosition() 
+{
+        var y = parseInt(document.getElementById('Y').value);
+        print(y);
+        if(y == null)
+            alert('Bad Hidden Field Id!');
+        else
+             $(window).scrollTop=y;
+}
+   
+   window.setInterval('getScrollPosition()', 350);
+   window.onload = setScrollPosition;
+</script>-->
 
 <div class="container">
 	<div class="row">
