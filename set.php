@@ -80,7 +80,7 @@ function showAlgsDropdown($setname, $setID, $userID, $pigstage, $pigview, $mysql
 			$userMoves = $useralg['moves'];
 			$useralg = $useralgs->fetch_array();
 			echo "
-				<button type='button' class='btn btn-light dropdown-toggle algbtn$caseID' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false' style='font-size:1.2em;width:100px;white-space:normal;text-align:left;font-weight:bold;'>$userMoves</button>
+				<button type='button' class='btn btn-light dropdown-toggle algbtn' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>$userMoves</button>
 				<div class='dropdown-menu'>";
 		}
 
@@ -90,7 +90,7 @@ function showAlgsDropdown($setname, $setID, $userID, $pigstage, $pigview, $mysql
 			$moves = $alg['moves'];
 			if ($first && $userMoves == "") { $first = false;
 				echo "
-				<button type='button' class='btn btn-light dropdown-toggle algbtn$caseID' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false' style='font-size:1.2em;width:100px;white-space:normal;text-align:left;font-weight:bold;'>$moves</button>
+				<button type='button' class='btn btn-light dropdown-toggle algbtn' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>$moves</button>
 				<div class='dropdown-menu'>";
 			}					
 			echo "<a class='dropdown-item' href=\"saveAlg?caseID=$caseID&setID=$setID&setname=$setname&moves=$moves\">$moves</a>";

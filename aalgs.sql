@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Dec 11, 2018 at 02:33 AM
+-- Generation Time: Dec 11, 2018 at 05:29 PM
 -- Server version: 5.7.23
 -- PHP Version: 7.2.10
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `a`
+-- Database: `aalgs`
 --
 
 -- --------------------------------------------------------
@@ -1035,7 +1035,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `resetToken` varchar(255) COLLATE utf8mb4_bin DEFAULT NULL,
   `resetComplete` varchar(3) COLLATE utf8mb4_bin DEFAULT 'No',
   PRIMARY KEY (`userID`)
-) ENGINE=MyISAM AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
+) ENGINE=MyISAM AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 
 --
 -- Dumping data for table `user`
@@ -1047,7 +1047,8 @@ INSERT INTO `user` (`userID`, `username`, `password`, `email`, `active`, `resetT
 (12, 'eee', '$2y$10$4Ir3klP1uf2WUbdo8/pZLegyH/7dWrltKFDqon7kdS.TK5fzs/xPe', 'e@e.e', '0a77138bbbfc5c0d9eed287664db1a7d', NULL, 'No'),
 (13, 'ttt', '$2y$10$KArJNs2p8PqYyJ9qX2xWEegxbh7DqUZlzJsIoShkc.z3aAYjBcJOS', 'ww@w.w', '5a5fb6cf73c0147aff5eaebd7fa02a20', NULL, 'No'),
 (14, 'qqq', '$2y$10$nCaXsZwQ9osZouC0EFSFGe52hMu7IeRDFE9EqJ6F79xK9aDfQeypy', 'q@q.q', 'ac8c98b8c6f2378294cf778af528e7d8', NULL, 'No'),
-(16, 'bbb', '$2y$10$k/SU/XAErh7.JOMugTz/E.WBVD0bFGw1y7HO6dQJlFtftn5mAcOsq', 'alanberotti@gmail.com', 'Yes', NULL, 'No');
+(16, 'bbb', '$2y$10$k/SU/XAErh7.JOMugTz/E.WBVD0bFGw1y7HO6dQJlFtftn5mAcOsq', 'alanberotti@gmail.com', 'Yes', NULL, 'No'),
+(17, 'wqq', '$2y$10$S5ymFhHy00PSMp.48kuIneKSCIaxCWzl1uR2uiY2BSHKq/A5wvaI6', 'w@w.w', 'fb0f5ef189b2eaae708032461a484016', NULL, 'No');
 
 -- --------------------------------------------------------
 
@@ -1068,47 +1069,115 @@ CREATE TABLE IF NOT EXISTS `user_alg` (
 --
 
 INSERT INTO `user_alg` (`userID`, `caseID`, `moves`, `setID`) VALUES
-(15, 59, 'x R2 D2 R U R\' D2 R U\' R x\'', 2),
-(15, 2, 'R\' U2 r U\' r\' U2 r U r\' U2 R', 1),
+(15, 59, 'y x\' R U\' R D2 R\' U R D2 R2 x', 2),
+(15, 2, 'y r U r\' U2 R U2 R\' U2 r U\' r\'', 1),
 (15, 64, 'y2 L2 u\' L U\' L U L\' u L2 y L U\' L\'', 2),
-(15, 58, 'x R\' U R\' D2 R U\' R\' D2 R2', 2),
-(15, 1, 'R U B\' R B R2 U\' R\' F R F\'', 1),
+(15, 1, 'R U2 R2 F R F\' U2 R\' F R F\'', 1),
 (15, 15, 'r\' U\' M\' U\' R U r\' U r', 1),
-(15, 60, 'y x\' R U\' R\' D R U R\' u2 R\' U R D R\' U\' R x', 2),
-(15, 26, 'y2 L\' U\' L U\' L\' U2 L', 1),
-(15, 7, 'L\' U2 L U2 L F\' L\' F', 1),
+(15, 60, 'z U2 R2 F R U R\' U\' R U R\' U\' R U R\' U\' F\' R2 U2 z\'', 2),
+(15, 26, 'R\' U L U\' R U L\'', 1),
+(15, 7, 'y2 l U L\' U L U2 l\'', 1),
 (15, 71, 'L U2 L\' U2 L F\' L\' U\' L U L F L2', 2),
 (15, 72, 'y2 r\' F2 r F R U\' R\' U\' F\' U\' r U\' r\' F', 2),
 (15, 93, 'U\' R\' U r U f R\' f\'', 3),
-(15, 80, 'U2 L\' U\' L U L F\' L\' F L\' U\' L U\' L\' U2 L', 3),
-(15, 101, 'U2 R\' F R F\' r U\' R\' U\' R U\' r\'', 3),
+(15, 80, 'U2 R2 D R\' U R D\' R\' U R\' U\' R U\' R\'', 3),
+(15, 101, 'R U\' L\' U R\' U L U L\' U L', 3),
 (16, 79, 'U\' L U2 L\' U\' L U\' L\'', 3),
 (15, 13, 'F U R U\' R2 F\' R U R U\' R\'', 1),
-(15, 8, 'l\' U\' L U\' L\' U2 l', 1),
-(15, 3, 'y F U R U\' R\' F\' U F R U R\' U\' F\'', 1),
-(15, 35, 'y\' R U2 R\' U\' R U\' R\' U2 F R U R\' U\' F\'', 1),
+(15, 8, 'y2 r\' U\' R U\' R\' U2 r', 1),
+(15, 35, 'f R U R\' U\' f\' R U R\' U R U2 R\'', 1),
 (15, 57, 'M\' U\' M\' U\' M\' U\' M\' U2 M\' U\' M\' U\' M\' U\' M\'', 1),
-(15, 121, 'y U2 R2 F R F\' R', 4),
+(15, 121, 'y2 U L U\' L\'', 4),
 (15, 122, 'r U R\' U\' M', 4),
 (15, 88, 'F U R U\' R\' U R U\' R\' U R U\' R\' F\'', 3),
 (16, 87, 'U2 R\' F\' R U2 R\' F2 R U\' F U F\'', 3),
-(15, 81, 'U2 F\' r U r\' U2 r\' F2 r', 3),
+(15, 81, 'U\' x\' F U\' R U L\' U2 R\' U2 R', 3),
 (15, 70, 'R\' U R U\' R\' F\' U\' F R U R\' F R\' F\' R U\' R', 2),
 (15, 66, 'R2 U2 R U2 R2 U2 R2 U2 R U2 R2', 2),
-(15, 76, 'R\' U R\' U\' y R\' F\' R2 U\' R\' U R\' F R F', 2),
-(15, 75, 'M2 U\' M\' U2 M U\' M2', 2),
-(15, 61, 'R\' U R U\' R2 F\' U\' F U R F R\' F\' R2', 2),
+(15, 76, 'z D\' R2 D R2 U R\' D\' R U\' R U R\' D R U\'', 2),
+(15, 75, 'R\' U R\' U\' R\' U\' R\' U R U R2', 2),
+(15, 61, 'y2 R\' U2 R\' d\' R\' F\' R2 U\' R\' U R\' F R U\' F', 2),
 (15, 111, 'U R\' F\' r U R U\' r\' F', 3),
 (15, 103, 'U L\' U2 L U L\' U L', 3),
 (15, 110, 'R\' U r U2 R2 F R F\' R', 3),
 (15, 109, 'U2 R\' U2 R2 B2 D B D\' B R2 U2 R', 3),
 (15, 115, 'R2 F U\' F U F2 R2 U\' R\' F R', 3),
 (15, 116, 'R\' F R U\' R\' U\' R U R\' F\' R U R\' U\' R\' F R F\' R', 3),
-(15, 99, 'U2 F U\' F\' U R\' F2 R U2 R\' F R', 3),
+(15, 99, 'F R\' F\' U2 R U R\' U R2 U2 R\'', 3),
 (15, 114, 'R2 U\' R F R\' U R2 U\' R\' F\' R', 3),
 (15, 117, 'L F\' L\' U\' L F\' L\' U\' F\' U2 F', 3),
 (15, 113, 'R U R D R\' U\' R D\' R2', 3),
-(15, 87, 'U2 R\' F\' R U2 R\' F2 R U\' F U F\'', 3);
+(15, 87, 'U F R U\' R\' U R U2 R\' U\' R U R\' U\' F\'', 3),
+(15, 40, 'y\' F R U R\' U\' F\' R U R\' U R U2 R\'', 1),
+(15, 24, 'y\' x\' R U R\' D R U\' R\' D\' x', 1),
+(15, 22, 'R U2 R2 U\' R2 U\' R2 U2 R', 1),
+(15, 23, 'y2 R2 D\' R U2 R\' D R U2 R', 1),
+(15, 100, 'R U2 R\' U2 R\' F R2 U R\' U\' F\'', 3),
+(15, 83, 'U2 L\' U R U\' L U R\'', 3),
+(15, 79, 'U2 L\' U\' L U\' L\' U2 L', 3),
+(15, 3, 'r\' R2 U R\' U r U2 r\' U M\'', 1),
+(15, 124, 'R U R\'', 4),
+(15, 6, 'y\' x\' D R2 U\' R\' U R\' D\' x', 1),
+(15, 45, 'F R2 D R\' U R D\' R2 U\' F\'', 1),
+(15, 44, 'y2 F U R U\' R\' F\'', 1),
+(15, 82, 'U2 R U2 r\' U2 R\' F R F\' M\'', 3),
+(15, 85, 'U\' R U R\' U R U\' R\' U R U2 R\'', 3),
+(15, 91, 'R\' F\' R U R\' U\' R\' F R2 U\' R\' U2 R', 3),
+(15, 86, 'U\' R U R\' U R U L\' U R\' U\' L', 3),
+(15, 84, 'U2 R\' U\' R U\' L U\' R\' U L\' U2 R', 3),
+(15, 69, 'L U\' R U2 L\' U R\' L U\' R U2 L\' U R\'', 2),
+(15, 74, 'y2 M2 U M U2 M\' U M2', 2),
+(15, 67, 'y2 R\' U2 R U R\' U2 L U\' R U L\'', 2),
+(15, 62, 'R2 u R\' U R\' U\' R u\' R2 F\' U F', 2),
+(15, 125, 'F2 L\' U\' L U F2', 4),
+(15, 123, 'y\' R\' U\' R', 4),
+(15, 148, 'R U R\' U\' F R\' F\' R', 4),
+(15, 39, 'y\' R B\' R\' U\' R U B U\' R\'', 1),
+(15, 42, 'y R\' F R F\' R\' F R F\' R U R\' U\' R U R\'', 1),
+(15, 41, 'y2 R U R\' U R U2 R\' F R U R\' U\' F\'', 1),
+(15, 28, 'M U M\' U2 M U M\'', 1),
+(15, 53, 'y r\' U2 R U R\' U\' R U R\' U r', 1),
+(15, 30, 'M U\' L\' U\' L U L F\' L\' F M\'', 1),
+(15, 38, 'L\' U\' L F L\' U\' L U L F\' L\' U L F\' L\' F', 1),
+(15, 36, 'y2 R U R\' F\' R U R\' U\' R\' F R U\' R\' F R F\'', 1),
+(15, 5, 'y2 l\' U2 L U L\' U l', 1),
+(15, 10, 'y2 L\' U\' L U L F\' L2 U\' L U F', 1),
+(15, 11, 'y2 r U R\' U R\' F R F\' R U2 r\'', 1),
+(15, 12, 'y\' M\' R\' U\' R U\' R\' U2 R U\' M', 1),
+(15, 89, 'F\' R D2 R\' F U2 F\' R D2 R\' F', 3),
+(15, 90, 'U2 F U2 F\' U\' R\' F\' R U\' R\' F\' R', 3),
+(15, 58, 'l\' U R\' D2 R U\' R\' D2 R2', 2),
+(15, 25, 'y\' x\' R U\' R\' D R U R\' D\' x', 1),
+(15, 31, 'y S R U R\' U\' f\' U\' F', 1),
+(15, 33, 'y\' r\' U\' r\' D\' r U r\' D r2', 1),
+(15, 27, 'y L\' U2 L U L\' U L', 1),
+(15, 106, 'r U\' L\' U R2 U2 L U\' L\' U2 R2 x\'', 3),
+(15, 146, 'U R U\' R\' F R\' F\' R', 4),
+(15, 147, 'R U\' R\' U R U\' R\'', 4),
+(15, 149, 'U2 R U\' R\' y\' R\' U\' R', 4),
+(15, 150, 'y U\' L\' U\' L U2 F U2 F\' U F U\' F\'', 4),
+(15, 152, 'R2 U R2 U R2 U2 R2', 4),
+(15, 153, 'R U R\' U\' F\' U F R U\' R\' U F\' U F', 4),
+(15, 154, 'y\' U R\' U R U2 R\' U R', 4),
+(15, 155, 'U2 R U\' R\' U\' y\' R\' U\' R', 4),
+(15, 156, 'R2 u R U R\' U\' u\' R\' U R\'', 4),
+(15, 158, 'R2 U2 R\' U\' R U\' R\' U2 R\'', 4),
+(15, 157, 'R\' F R F\' R U\' R\' U R U\' R\' U2 R U\' R\'', 4),
+(15, 49, 'l U\' l2 U l2 U l2 U\' l', 1),
+(15, 50, 'y2 l\' U l2 U\' l2 U\' l2 U l\'', 1),
+(15, 51, 'f R U R\' U\' R U R\' U\' f\'', 1),
+(15, 55, 'y R\' F R U R U\' R2 F\' R2 U\' R\' U R U R\'', 1),
+(15, 56, 'r U r\' U R U\' R\' U R U\' M\' U\' r\'', 1),
+(15, 52, 'R\' U\' R U\' R\' U F\' U F R', 1),
+(15, 46, 'y F R U R\' y\' R\' U R U2 R\'', 1),
+(15, 9, 'r\' R2 U2 R\' U\' R U\' R\' U\' M\'', 1),
+(15, 14, 'R\' F R U R\' F\' R F U\' F\'', 1),
+(15, 102, 'L\' U\' L U\' L\' U L F R U R\' F\'', 3),
+(15, 94, 'U\' R\' U\' R U R\' F\' R U R\' U\' R\' F R2', 3),
+(15, 63, 'y F\' U\' F R2 u R\' U R U\' R u\' R2', 2),
+(15, 68, 'L\' U R U\' L U2 R\' U R U2 R\'', 2),
+(15, 65, 'D\' R U R\' U\' D R2 U\' R U\' R\' U R\' U R2', 2),
+(15, 73, 'R2 U R2 U\' R2 U\' D R2 U\' R2 U R2 D\'', 2);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
