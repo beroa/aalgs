@@ -383,7 +383,7 @@ class PhpMailer
     public $DKIM_selector = '';
 
     /**
-     * DKIM identity.
+     * DKIM Identity.
      * Usually the email address used as the source of the email
      * @type string
      */

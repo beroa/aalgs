@@ -1,6 +1,22 @@
 <?php
 require_once('mysqli.php');
 
+function debug_to_console( $data ) {
+    $output = $data;
+    if ( is_array( $output ) )
+        $output = implode( ',', $output);
+
+    echo "<script>console.log( 'Debug Objects: " . $output . "' );</script>";
+}
+
+function debug_to_console_from_php( $data ) {
+    $output = $data;
+    if ( is_array( $output ) )
+        $output = implode( ',', $output);
+
+    echo "?><script>console.log( 'Debug Objects: " . $output . "' );</script><?php";
+}
+
 function showVisualCube($pigcase, $pigstage, $pigview) {
 	$imgsrc = "visualcube/visualcube.php?fmt=svg&size=128&case=$pigcase&stage=$pigstage";
 	if ($pigview != "") $imgsrc = $imgsrc . "&view=$pigview";

@@ -1,4 +1,5 @@
 <?php require('includes/config.php');
+// require_once('./functions.php');
 
 //if logged in redirect to user page
 if( $user->isLoggedIn() ){ header('Location: userpage.php'); exit(); }
@@ -88,6 +89,7 @@ if(isset($_POST['submit'])){
 			$mail->subject($subject);
 			$mail->body($body);
 			$mail->send();
+        	echo $mail->ErrorInfo;
 
 			//redirect to index page
 			header('Location: register.php?action=joined');
@@ -106,7 +108,7 @@ if(isset($_POST['submit'])){
 $title = 'Demo';
 
 include("layout/header.php"); 			// Page Header 
-include("layout/navbar.php");			// Navigation Bar
+require_once("layout/navbar.php");			// Navigation Bar
 ?>
 
 
