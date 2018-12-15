@@ -19,7 +19,7 @@ if(isset($_GET['setname'])){
   	}
 } else $setID = 0;
 
-if(isset($_GET['y'])) $y = $_GET['y']; else $y = 0;
+// if(isset($_GET['y'])) $y = $_GET['y']; else $y = 0;
 
 // runs queries and shows algs in flexbox format
 function showAlgsFlex($setname, $setID, $pigstage, $pigview, $mysqli) {
