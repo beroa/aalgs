@@ -1,5 +1,5 @@
 <?php
-require_once('includes/config.php');
+require_once('config.php');
 include('mysqli.php'); 
 ?>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-2">

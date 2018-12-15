@@ -1,6 +1,6 @@
 <?php
 //include config
-require_once('includes/config.php');
+require_once('config.php');
 
 //check if already logged in move to home page
 if( $user->isLoggedIn() ){ header('Location: index.php'); exit(); }

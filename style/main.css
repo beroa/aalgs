@@ -21,6 +21,11 @@
 	padding: 1.5em;
 }
 
+#rss-wca-table {
+	width: 100%;
+	table-layout:fixed
+}
+
 .cellpadding {
    padding-right: 5px;
 }

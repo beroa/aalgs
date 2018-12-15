@@ -1,4 +1,4 @@
-<?php require('includes/config.php'); 
+<?php require('config.php'); 
 
 //if logged in redirect to user page
 if( $user->isLoggedIn() ){ header('Location: userpage.php'); exit(); }

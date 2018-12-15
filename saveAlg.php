@@ -1,4 +1,4 @@
-<?php require('includes/config.php');
+<?php require('config.php');
 require('mysqli.php');
 
 if (isset($_GET['caseID'])) { $caseID = $_GET['caseID']; }

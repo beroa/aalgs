@@ -1,4 +1,4 @@
-<?php require('includes/config.php');
+<?php require('config.php');
 // require_once('./functions.php');
 
 //if logged in redirect to user page

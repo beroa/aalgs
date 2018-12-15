@@ -3,7 +3,7 @@ require('layout/header.php');
 require('layout/navbar.php');
 require('functions.php');
 
-require_once('includes/config.php');
+require_once('config.php');
 
 // determine setID from name
 if(isset($_GET['setname'])){
@@ -18,8 +18,6 @@ if(isset($_GET['setname'])){
 		if ($pigview == 'trans') $pigview = '';
   	}
 } else $setID = 0;
-
-// if(isset($_GET['y'])) $y = $_GET['y']; else $y = 0;
 
 // runs queries and shows algs in flexbox format
 function showAlgsFlex($setname, $setID, $pigstage, $pigview, $mysqli) {

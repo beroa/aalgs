@@ -5,15 +5,21 @@ session_start();
 //set timezone
 date_default_timezone_set('America/New_York');
 
+// set composer and autoload
+require __DIR__ . '\vendor\autoload.php';
+$dotenv = new Dotenv\Dotenv(__DIR__);
+$dotenv->load();
+
 //database credentials
-define('DBHOST','localhost');
-define('DBUSER','root');
-define('DBPASS','');
-define('DBNAME','aalgs');
+define('DBHOST',getenv('DBHOST'));
+define('DBUSER',getenv('DBUSER'));
+define('DBPASS',getenv('DBPASS'));
+define('DBNAME',getenv('DBNAME'));
 
 //application address
-define('DIR','localhost/aalgs/');
-define('SITEEMAIL','alansalgs@gmail.com');
+define('DIR',getenv('DIR'));
+define('SITEEMAIL',getenv('SITEEMAIL'));
+define('SITEPASS',getenv('SITEPASS'));
 
 try {
 

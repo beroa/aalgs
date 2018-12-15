@@ -32,7 +32,7 @@ include('functions.php');
 
 <div class="container">
 	<div class="row">
-		<div id="rss-wca" class="col-lg-12 col-xl-4 offset-xl-4">
+		<div id="rss-wca" class="col-lg-12 col-xl-6 offset-xl-3">
 			<h3>WCA News</h3>
 			<?php getFeed("https://www.worldcubeassociation.org/rss"); ?>
 		</div>
