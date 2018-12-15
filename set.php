@@ -91,7 +91,7 @@ function showAlgsDropdown($setname, $setID, $userID, $pigstage, $pigview, $mysql
 				<button type='button' class='btn btn-light dropdown-toggle algbtn' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>$moves</button>
 				<div class='dropdown-menu'>";
 			}					
-			echo "<a class='dropdown-item' href=\"saveAlg?caseID=$caseID&setID=$setID&setname=$setname&moves=$moves\">$moves</a>";
+			echo "<a class='dropdown-item' href=\"saveAlg.php?caseID=$caseID&setID=$setID&setname=$setname&moves=$moves\">$moves</a>";
 		} 
 		echo "</div></div>";
 		echo "</div>";

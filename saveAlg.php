@@ -4,7 +4,7 @@ require('mysqli.php');
 if (isset($_GET['caseID'])) { $caseID = $_GET['caseID']; }
 if (isset($_GET['moves'])) { $moves = $_GET['moves']; }
 if (isset($_GET['setID'])) { $setID = $_GET['setID']; }
-if (isset($_GET['setname'])) { $rtrnaddr = 'set?setname=' . $_GET['setname']; }
+if (isset($_GET['setname'])) { $rtrnaddr = 'set.php?setname=' . $_GET['setname']; }
 
 
 if ($user->isLoggedIn()) {

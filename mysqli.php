@@ -3,7 +3,7 @@
 // Written by: Charles Kaplan, November 2018
 
 // Connect to MySQLi and the personal Database
-$mysqli = mysqli_connect(DBHOST, DBUSER, DBPASS, DBNAME);
+$mysqli = mysqli_connect(getenv('DBHOST'), getenv('DBUSER'), getenv('DBPASS'), getenv('DBNAME'));
 if (mysqli_connect_error()) die('Connect Error: ' . mysqli_connect_error());	
 
 function insertUserAlg($userID, $caseID, $moves, $setID, $mysqli) {

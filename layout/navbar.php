@@ -24,7 +24,7 @@ include('mysqli.php');
 					else {
 						while($res = $result->fetch_array()) {
 							$name = $res['name'];
-							echo "<a class='dropdown-item' href='set?setname=$name'>$name</a>";
+							echo "<a class='dropdown-item' href='set.php?setname=$name'>$name</a>";
 				  		}
 					}
 				?>
@@ -37,7 +37,7 @@ include('mysqli.php');
 				$username = $user->getUsername();
 				if( $user->isLoggedIn() ) {
 					echo "<li class='nav-link disabled'>$username</li>";
-					echo '<li class="nav-item"><a class="nav-link" href="logout">Logout</a></li>';
+					echo '<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>';
 				} else {
 					echo '<li class="nav-item"><a class="nav-link" href="register.php">Register</a></li>
 							<li class="nav-item"><a class="nav-link" href="login.php">Log In</a></li>';

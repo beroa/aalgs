@@ -6,7 +6,7 @@ session_start();
 date_default_timezone_set('America/New_York');
 
 // set composer and autoload
-require __DIR__ . '\vendor\autoload.php';
+require __DIR__ . '/vendor/autoload.php';
 $dotenv = new Dotenv\Dotenv(__DIR__);
 $dotenv->load();
 
