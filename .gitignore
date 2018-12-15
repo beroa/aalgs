@@ -1,5 +1,3 @@
-json
 notes.txt
-classes/phpmailer/mail.php
-
 .env
+error_log
