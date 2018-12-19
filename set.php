@@ -1,5 +1,4 @@
 <?php
-
 require('layout/header.php'); 
 require('layout/navbar.php');
 require('functions.php');
