@@ -5,17 +5,24 @@ class Mail extends PhpMailer
 {
 
     // Set default variables for all new objects
-    public $From     = 'alansalgs@gmail.com';
     public $FromName = DIR;
     public $Mailer   = 'smtp';
-    public $Host     = 'smtp.gmail.com';
+    public $Host     = 'server120.web-hosting.com';
     public $SMTPAuth = true;
-    public $Username = 'alansalgs@gmail.com';
-    public $Password = 'nopassword;';
-    public $SMTPSecure = 'ssl';
+    public $SMTPSecure = 'tls';
     public $WordWrap = 75;
     public $SMTPDebug = 2;
-    public $Port = 465;
+    public $Port = 587;
+
+    public $From;
+    public $Username;
+    public $Password;
+
+    function __construct() {
+        $this->From = getenv('SITEEMAIL');
+        $this->Username = getenv('SITEEMAIL');
+        $this->Password = getenv('SITEPASS');
+    }
 
     public function subject($subject)
     {
