@@ -84,15 +84,19 @@ if(isset($_POST['submit'])){
 			<p>Regards Site Admin</p>";
 
 			$mail = new Mail();
-			$mail->setFrom(SITEEMAIL);
+			$mail->setFrom(EMAIL_USER);
 			$mail->addAddress($to);
 			$mail->subject($subject);
 			$mail->body($body);
 			$mail->send();
-        	echo $mail->ErrorInfo;
+        	echo $mail->ErrorInfo . "<br>";
+        	echo $mail->From . "<br>";
+        	echo $mail->Username . "<br>";
+        	echo $mail->Password . "<br>";
+
 
 			//redirect to index page
-			header('Location: register.php?action=joined');
+			// header('Location: register.php?action=joined');
 			exit;
 
 		//else catch the exception and show the error.

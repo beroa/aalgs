@@ -18,8 +18,9 @@ define('DBNAME',getenv('DBNAME'));
 
 //application address
 define('DIR',getenv('DIR'));
-define('SITEEMAIL',getenv('SITEEMAIL'));
-define('SITEPASS',getenv('SITEPASS'));
+define('EMAIL_USER',getenv('EMAIL_USER'));
+define('EMAIL_PASS',getenv('EMAIL_PASS'));
+define('EMAIL_HOST',getenv('EMAIL_HOST'));
 
 try {
 
