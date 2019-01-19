@@ -96,7 +96,7 @@ if(isset($_POST['submit'])){
 
 
 			//redirect to index page
-			// header('Location: register.php?action=joined');
+			header('Location: register.php?action=joined');
 			exit;
 
 		//else catch the exception and show the error.
